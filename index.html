@@ -53,6 +53,8 @@ header h1{
 }
 header h1 em{font-style:italic;color:var(--rose)}
 header p{margin-top:10px;color:var(--muted);font-size:0.9rem;font-weight:300;letter-spacing:0.05em}
+.header-autora{margin-top:14px;font-size:.76rem;color:var(--muted);letter-spacing:.04em;opacity:.75}
+.header-autora strong{color:var(--petal);font-weight:600}
 .ornament{display:flex;align-items:center;gap:10px;margin:24px auto 0;width:fit-content}
 .ornament-line{width:44px;height:1px;background:linear-gradient(90deg,transparent,var(--petal))}
 .ornament-line:last-child{background:linear-gradient(90deg,var(--petal),transparent)}
@@ -404,6 +406,87 @@ header p{margin-top:10px;color:var(--muted);font-size:0.9rem;font-weight:300;let
 }
 
 /* ── RECEITAS ARTESANAIS ── */
+.sin-mode-row{display:flex;gap:8px;margin-bottom:20px}
+.sin-mode-btn{flex:1;padding:10px 14px;border:1px solid var(--border);border-radius:50px;background:var(--card);color:var(--muted);font-family:'Jost',sans-serif;font-size:.82rem;font-weight:500;cursor:pointer;transition:all .22s;text-align:center}
+.sin-mode-btn.active{background:var(--deep);color:var(--cream);border-color:var(--deep)}
+.sin-mode-btn:hover:not(.active){border-color:var(--petal);color:var(--deep)}
+.cuid-card{background:var(--card);border:1px solid var(--border);border-radius:15px;padding:15px 17px 13px;display:flex;flex-direction:column;gap:8px;transition:transform .2s,box-shadow .2s;border-top:3px solid var(--sage)}
+.cuid-card:hover{transform:translateY(-2px);box-shadow:0 10px 26px var(--shadow)}
+.cuid-cat-tag{font-size:.65rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;padding:2px 9px;border-radius:50px;background:rgba(107,155,122,.13);color:var(--sage);align-self:flex-start}
+.cuid-name{font-family:'Cormorant Garamond',serif;font-size:1.12rem;font-weight:600;color:var(--deep);line-height:1.2}
+.cuid-base{font-size:.75rem;color:var(--muted);font-style:italic}
+.cuid-oils{display:flex;flex-direction:column;gap:4px;margin-top:2px}
+.cuid-oil{display:flex;align-items:center;gap:7px;font-size:.81rem;color:var(--deep)}
+.cuid-gt{font-weight:600;color:var(--sage);min-width:38px;font-variant-numeric:tabular-nums}
+.cuid-obs{font-size:.76rem;color:var(--muted);line-height:1.55;border-top:1px dashed var(--border);padding-top:7px;margin-top:3px}
+/* ── PSICOAROMATERAPIA ── */
+.psico-tabs{display:flex;gap:6px;margin-bottom:22px;flex-wrap:wrap}
+.psico-tab{padding:8px 18px;border-radius:50px;border:1px solid var(--border);background:var(--card);color:var(--muted);font-family:'Jost',sans-serif;font-size:.8rem;font-weight:500;cursor:pointer;transition:all .22s}
+.psico-tab.active{background:var(--deep);color:var(--cream);border-color:var(--deep)}
+.psico-tab:hover:not(.active){border-color:var(--petal);color:var(--deep)}
+.psico-info-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-bottom:10px}
+.psico-info-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px 22px;border-left:4px solid var(--petal)}
+.psico-info-card h3{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:var(--deep);margin-bottom:8px}
+.psico-info-card p{font-size:.84rem;color:var(--muted);line-height:1.7;margin-bottom:8px}
+.psico-info-card ul{padding-left:16px;margin:0}
+.psico-info-card li{font-size:.82rem;color:var(--muted);line-height:1.65;margin-bottom:3px}
+.psico-pathway{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:12px 0;padding:12px 14px;background:rgba(196,149,106,.07);border-radius:10px}
+.psico-step{padding:5px 11px;border-radius:50px;background:var(--deep);color:var(--cream);font-size:.74rem;font-weight:500;white-space:nowrap}
+.psico-arrow{color:var(--petal);font-size:.9rem;flex-shrink:0}
+.psico-highlight{background:rgba(196,149,106,.1);border-left:3px solid var(--petal);padding:9px 13px;border-radius:0 8px 8px 0;font-size:.82rem;color:var(--deep);margin:8px 0;line-height:1.6}
+.psico-brain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:12px 0}
+.psico-brain-card{padding:13px;border-radius:12px;text-align:center}
+.psico-brain-card.reptil{background:rgba(168,93,74,.09);border:1px solid rgba(168,93,74,.2)}
+.psico-brain-card.mamifero{background:rgba(196,149,106,.09);border:1px solid rgba(196,149,106,.2)}
+.psico-brain-card.neo{background:rgba(107,155,122,.09);border:1px solid rgba(107,155,122,.2)}
+.psico-brain-title{font-family:'Cormorant Garamond',serif;font-size:.95rem;font-weight:600;color:var(--deep);margin-bottom:4px}
+.psico-brain-sub{font-size:.72rem;color:var(--muted);line-height:1.5}
+.emoc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
+.emoc-card{background:var(--card);border:1px solid var(--border);border-radius:15px;padding:15px 17px;border-top:3px solid var(--rose);transition:transform .2s,box-shadow .2s}
+.emoc-card:hover{transform:translateY(-2px);box-shadow:0 8px 22px var(--shadow)}
+.emoc-estado{font-size:.65rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--rose);margin-bottom:3px}
+.emoc-titulo{font-family:'Cormorant Garamond',serif;font-size:1.12rem;font-weight:600;color:var(--deep);margin-bottom:6px;display:flex;align-items:center;gap:7px}
+.emoc-sinais{font-size:.77rem;color:var(--muted);line-height:1.55;margin-bottom:9px;font-style:italic}
+.emoc-oleos{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:9px}
+.emoc-oleo{padding:2px 9px;border-radius:50px;background:rgba(196,149,106,.1);border:1px solid rgba(196,149,106,.22);font-size:.72rem;color:var(--petal);font-weight:500}
+.emoc-protocolo{font-size:.78rem;color:var(--deep);line-height:1.6;background:rgba(107,155,122,.06);border-radius:8px;padding:8px 11px;margin-bottom:7px}
+.emoc-afirm{font-size:.74rem;color:var(--sage);font-style:italic;text-align:center;padding-top:7px;border-top:1px dashed var(--border)}
+.pele-emoc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
+.pele-emoc-card{background:var(--card);border:1px solid var(--border);border-radius:15px;padding:15px 17px;border-top:3px solid var(--sage)}
+.pele-emoc-card:hover{transform:translateY(-2px);box-shadow:0 8px 22px var(--shadow);transition:transform .2s,box-shadow .2s}
+.pele-emoc-cond{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--deep);margin-bottom:4px;display:flex;align-items:center;gap:7px}
+.pele-emoc-raiz{font-size:.78rem;font-weight:500;color:var(--rose);margin-bottom:7px}
+.pele-emoc-desc{font-size:.8rem;color:var(--muted);line-height:1.62;margin-bottom:9px}
+.pele-emoc-abord{font-size:.78rem;color:var(--deep);background:rgba(107,155,122,.07);border-radius:8px;padding:8px 11px;line-height:1.6}
+.pele-emoc-header{display:flex;align-items:center;gap:9px;margin-bottom:8px}
+.pele-emoc-emoji{font-size:1.6rem;line-height:1}
+.pele-emoc-emoc{font-size:.77rem;color:var(--muted);font-style:italic;margin:6px 0 9px}
+.pele-emoc-oleos{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}
+.pele-emoc-tag{padding:2px 9px;border-radius:50px;background:rgba(196,149,106,.1);border:1px solid rgba(196,149,106,.22);font-size:.72rem;color:var(--petal);font-weight:500}
+.pele-emoc-tag.in-stock{background:rgba(107,155,122,.12);border-color:rgba(107,155,122,.35);color:var(--sage)}
+.psico-snic-box{padding:10px 14px;border-radius:10px;font-size:.8rem;font-weight:500;color:var(--deep);text-align:center;flex:1;min-width:120px;border:1px solid var(--border)}
+.psico-snic-arrow{font-size:1.3rem;color:var(--petal);align-self:center;flex-shrink:0}
+.psico-brain-oleos{margin-top:9px;font-size:.72rem;color:var(--muted);font-style:italic;line-height:1.6}
+.psico-brain-card p{font-size:.78rem;color:var(--muted);line-height:1.6;margin:8px 0}
+.emoc-estado{display:flex;align-items:flex-start;gap:9px;margin-bottom:11px;padding:10px;border-radius:10px}
+.emoc-emoji{font-size:1.7rem;line-height:1;flex-shrink:0}
+.emoc-desc{font-size:.8rem;color:var(--muted);line-height:1.6;margin-bottom:10px}
+.emoc-oleos-titulo{font-size:.74rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--sage);margin-bottom:6px}
+.emoc-oleos{display:flex;flex-direction:column;gap:5px;margin-bottom:10px}
+.emoc-oleo{display:flex;align-items:center;gap:7px;padding:5px 8px;border-radius:8px;background:rgba(196,149,106,.07);border:1px solid rgba(196,149,106,.15);font-size:.76rem}
+.emoc-oleo strong{color:var(--deep);font-size:.78rem}
+.emoc-oleo small{color:var(--muted);font-size:.71rem;display:block}
+.emoc-oleo.in-stock{background:rgba(107,155,122,.08);border-color:rgba(107,155,122,.25)}
+.emoc-header{display:flex;align-items:flex-start;gap:10px;margin-bottom:10px}
+.emoc-nome{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--deep);line-height:1.2;margin-bottom:3px}
+.emoc-oleos-grid{display:flex;flex-direction:column;gap:5px;margin:10px 0}
+.emoc-oleo-nome{flex:1;display:flex;align-items:center;gap:4px}
+.emoc-oleo-acao{font-size:.71rem;color:var(--muted)}
+.emoc-proto{font-size:.78rem;color:var(--deep);line-height:1.6;background:rgba(107,155,122,.06);border-radius:8px;padding:8px 11px;margin-bottom:7px}
+.emoc-afirmacao{font-size:.75rem;color:var(--sage);font-style:italic;text-align:center;padding-top:8px;border-top:1px dashed var(--border)}
+.emoc-oleo.tem{background:rgba(107,155,122,.10);border-color:rgba(107,155,122,.3)}
+.psico-section{display:none}
+.psico-section:first-of-type,.psico-section.active{display:block}
 .rec-filter-row{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px}
 .rec-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(295px,1fr));gap:16px}
 .rec-card{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;transition:transform .2s,box-shadow .2s;border-top:3px solid var(--sage)}
@@ -433,6 +516,34 @@ header p{margin-top:10px;color:var(--muted);font-size:0.9rem;font-weight:300;let
 .rec-val{font-size:.74rem;color:var(--muted);margin-top:8px;font-style:italic}
 .rec-toggle{width:100%;padding:8px;background:transparent;border:none;border-top:1px dashed var(--border);font-family:'Jost',sans-serif;font-size:.77rem;color:var(--muted);cursor:pointer;transition:color .2s}
 .rec-toggle:hover{color:var(--petal)}
+.m-proto-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px;margin-top:6px}
+.m-proto-card{background:rgba(107,155,122,.06);border:1px solid rgba(107,155,122,.2);border-radius:10px;padding:10px 12px}
+.m-proto-cond{font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--sage);margin-bottom:6px}
+.m-proto-list{margin:0;padding-left:14px;font-size:.76rem;color:var(--deep);line-height:1.6}
+.m-proto-list li{margin-bottom:3px}
+.rec-chip{padding:6px 14px;border-radius:50px;border:1px solid var(--border);background:var(--card);color:var(--muted);font-family:'Jost',sans-serif;font-size:.78rem;cursor:pointer;transition:all .2s}
+.rec-chip.active,.rec-chip:hover{background:var(--deep);color:var(--cream);border-color:var(--deep)}
+.rec-header{display:flex;gap:11px;align-items:flex-start;padding:15px 17px 10px}
+.rec-meta{flex:1}
+.rec-tags{display:flex;flex-wrap:wrap;gap:5px;margin:5px 0 0}
+.rec-cat{font-size:.64rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;padding:2px 8px;border-radius:50px;background:rgba(107,155,122,.13);color:var(--sage)}
+.rec-dif{font-size:.72rem;color:var(--muted)}
+.rec-tempo{font-size:.72rem;color:var(--muted)}
+.rec-indicado{font-size:.77rem;color:var(--sage);padding:0 17px 8px;font-weight:500}
+.rec-desc{font-size:.82rem;color:var(--muted);line-height:1.65;padding:0 17px 12px}
+.rec-toggle-btn{display:block;width:calc(100% - 34px);margin:0 17px 14px;padding:7px;background:rgba(196,149,106,.08);border:1px dashed rgba(196,149,106,.35);border-radius:8px;color:var(--petal);font-family:'Jost',sans-serif;font-size:.78rem;cursor:pointer;transition:all .2s;text-align:center}
+.rec-toggle-btn:hover{background:rgba(196,149,106,.16)}
+.rec-section-title{font-size:.68rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--petal);margin:12px 17px 6px}
+.rec-ings{padding:0 17px;display:flex;flex-direction:column;gap:4px;margin-bottom:12px}
+.rec-ing{display:flex;align-items:baseline;gap:6px;font-size:.8rem;padding:4px 0;border-bottom:1px solid var(--border)}
+.rec-ing-n{flex:1;color:var(--deep);font-weight:500}
+.rec-ing-q{color:var(--rose);font-weight:600;white-space:nowrap}
+.rec-ing-o{font-size:.7rem;color:var(--muted);font-style:italic}
+.rec-passos{padding:0 17px;display:flex;flex-direction:column;gap:7px;margin-bottom:12px}
+.rec-passo{display:flex;gap:9px;font-size:.81rem;line-height:1.55;color:var(--deep)}
+.rec-passo-n{min-width:20px;height:20px;border-radius:50%;background:var(--deep);color:var(--cream);display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:600;flex-shrink:0;margin-top:2px}
+.rec-dica{background:rgba(196,149,106,.08);border:1px solid rgba(196,149,106,.2);border-radius:9px;padding:10px 13px;font-size:.78rem;color:var(--muted);margin:0 17px 10px;line-height:1.62}
+.rec-val{font-size:.73rem;color:var(--muted);padding:0 17px 15px;font-style:italic}
 </style>
 </head>
 <body>
@@ -450,6 +561,7 @@ header p{margin-top:10px;color:var(--muted);font-size:0.9rem;font-weight:300;let
     <div class="ornament-dot"></div>
     <div class="ornament-line"></div>
   </div>
+  <p class="header-autora">feito por <strong>Renata Raphaela</strong> · apaixonada pelos óleos essenciais 🌿</p>
 </header>
 
 <!-- DRIVE BAR -->
@@ -476,6 +588,7 @@ header p{margin-top:10px;color:var(--muted);font-size:0.9rem;font-weight:300;let
     <button class="tab" onclick="goTab('bib',this)">📚 Biblioteca</button>
     <button class="tab" onclick="goTab('guia',this)">📖 Guia</button>
     <button class="tab" onclick="goTab('receitas',this)">⚗️ Receitas</button>
+    <button class="tab" onclick="goTab('psicoaroma',this)">🧠 Psicoaroma</button>
   </div>
 </div>
 
@@ -554,8 +667,12 @@ header p{margin-top:10px;color:var(--muted);font-size:0.9rem;font-weight:300;let
 <!-- ═══════════ SINERGIAS ═══════════ -->
 <div id="panel-sinergias" class="panel">
   <div class="wrap">
-    <h2 class="sec-title">Sinergias para Difusor</h2>
-    <p class="sec-sub">150 receitas prontas · livro <em>Sinergias no Difusor</em></p>
+    <h2 class="sec-title" id="sin-title">Sinergias para Difusor</h2>
+    <p class="sec-sub" id="sin-sub">150 receitas prontas · livro <em>Sinergias no Difusor</em></p>
+    <div class="sin-mode-row">
+      <button class="sin-mode-btn active" id="sin-btn-difusor" onclick="setSinMode('difusor',this)">🌬️ Difusor <small style="opacity:.65">(150)</small></button>
+      <button class="sin-mode-btn" id="sin-btn-cuidados" onclick="setSinMode('cuidados',this)">🧴 Cuidados Gerais <small style="opacity:.65">(55)</small></button>
+    </div>
     <div class="search-wrap">
       <span class="search-icon">🔍</span>
       <input type="text" id="sin-search" placeholder="Buscar por nome da receita ou óleo..." oninput="renderSin()">
@@ -613,6 +730,34 @@ header p{margin-top:10px;color:var(--muted);font-size:0.9rem;font-weight:300;let
     </div>
     <div class="trt-grid" id="trt-grid"></div>
     <div class="notice">⚠️ Formulações em <strong>porcentagem (%)</strong>. Use a Tabela de Diluição no Guia: 1% = 25 gotas em 100ml de carreador. Bases sugeridas (creme, gel, óleo, bálsamo) seguem indicações originais. Receitas extraídas de <em>"Sinergias 2"</em> do Método Pele de Pétalas — André Ferraz.</div>
+
+    <div style="margin-top:24px">
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--deep);margin-bottom:6px">📋 Sinergias para Cuidados Gerais <span style="font-size:.75rem;color:var(--muted);font-weight:400">(Módulo Pele de Pétalas)</span></h3>
+      <p style="font-size:.8rem;color:var(--muted);margin-bottom:12px">Categorias disponíveis no material do curso. Os ingredientes completos estão no PDF <em>"Sinergias para cuidados gerais"</em>:</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px">
+        <div class="m-proto-card"><div class="m-proto-cond">🌸 Peles Sensíveis</div><div style="font-size:.77rem;color:var(--muted)">Tratamento equilibrador #1 e #2</div></div>
+        <div class="m-proto-card"><div class="m-proto-cond">⏳ Rugas & Envelhecimento</div><div style="font-size:.77rem;color:var(--muted)">Rejuvenescimento · Contorno dos olhos</div></div>
+        <div class="m-proto-card"><div class="m-proto-cond">🔥 Queima de Gordura</div><div style="font-size:.77rem;color:var(--muted)">Queima geral · Pronta pro Verão · Xô Gordurinha</div></div>
+        <div class="m-proto-card"><div class="m-proto-cond">👁️ Olheiras</div><div style="font-size:.77rem;color:var(--muted)">Sempreviva Power · Camomila & Rosas · Olheira Não!</div></div>
+        <div class="m-proto-card"><div class="m-proto-cond">💆 Óleos de Massagem</div><div style="font-size:.77rem;color:var(--muted)">Sunshine · Prazer Feminino · Atletas · Articulações</div></div>
+        <div class="m-proto-card"><div class="m-proto-cond">🛁 Banhos</div><div style="font-size:.77rem;color:var(--muted)">Sensual · Bebês · Drenante · Relaxante · Meditativo</div></div>
+        <div class="m-proto-card"><div class="m-proto-cond">🪒 Pré e Pós Depilatório</div><div style="font-size:.77rem;color:var(--muted)">Antes #1, #2 · Após #1, #2 · Pós-barba masculino</div></div>
+        <div class="m-proto-card"><div class="m-proto-cond">🌿 Desodorante Natural</div><div style="font-size:.77rem;color:var(--muted)">Formulação #1 e #2</div></div>
+        <div class="m-proto-card"><div class="m-proto-cond">🦷 Cuidado Bucal</div><div style="font-size:.77rem;color:var(--muted)">Branqueamento · Enxaguante · Lábios · Tea Tree + Hortelã</div></div>
+        <div class="m-proto-card"><div class="m-proto-cond">💧 Drenagem Linfática</div><div style="font-size:.77rem;color:var(--muted)">Formulações #1, #2 e #3</div></div>
+        <div class="m-proto-card"><div class="m-proto-cond">🤕 Contusões</div><div style="font-size:.77rem;color:var(--muted)">Formulações #1, #2, #3 e #4</div></div>
+        <div class="m-proto-card"><div class="m-proto-cond">🌿 Alergias de Pele</div><div style="font-size:.77rem;color:var(--muted)">Forte · Média · Suave</div></div>
+        <div class="m-proto-card"><div class="m-proto-cond">🍊 Celulite</div><div style="font-size:.77rem;color:var(--muted)">Formulações #1, #2, #3 e #4</div></div>
+        <div class="m-proto-card"><div class="m-proto-cond">〰️ Estrias</div><div style="font-size:.77rem;color:var(--muted)">Formulações #1 e #2</div></div>
+        <div class="m-proto-card"><div class="m-proto-cond">🩹 Cicatrização</div><div style="font-size:.77rem;color:var(--muted)">Formulações #1, #2, #3 e #4</div></div>
+        <div class="m-proto-card"><div class="m-proto-cond">☀️ Protetor Solar</div><div style="font-size:.77rem;color:var(--muted)">Formulações #1 e #2</div></div>
+        <div class="m-proto-card"><div class="m-proto-cond">💇 Caspa</div><div style="font-size:.77rem;color:var(--muted)">Formulação específica</div></div>
+        <div class="m-proto-card"><div class="m-proto-cond">💅 Unhas</div><div style="font-size:.77rem;color:var(--muted)">Quebradiças · Amarelas · Sérum para saúde</div></div>
+        <div class="m-proto-card"><div class="m-proto-cond">✨ Pele Oleosa</div><div style="font-size:.77rem;color:var(--muted)">Sem vida · Com acne · Questões emocionais</div></div>
+        <div class="m-proto-card"><div class="m-proto-cond">💧 Pele Seca</div><div style="font-size:.77rem;color:var(--muted)">Formulação com base carreadora</div></div>
+      </div>
+      <div class="notice" style="margin-top:10px">📖 Ingredientes completos disponíveis no PDF <em>"Pele de Pétalas — Sinergias para Cuidados Gerais"</em> (Módulo do curso). Os percentuais e óleos específicos de cada formulação estão no material original.</div>
+    </div>
   </div>
 </div>
 
@@ -620,12 +765,13 @@ header p{margin-top:10px;color:var(--muted);font-size:0.9rem;font-weight:300;let
 <div id="panel-carreadores" class="panel">
   <div class="wrap">
     <h2 class="sec-title">Bases Carreadoras</h2>
-    <p class="sec-sub">14 óleos vegetais · 6 macerados · hidrolatos · géis · Pele de Pétalas Módulo 3</p>
+    <p class="sec-sub">14 óleos vegetais · 6 macerados · hidrolatos · géis · 9 argilas · Pele de Pétalas Módulo 3</p>
     <div class="chips" id="car-tabs">
       <button class="chip active" onclick="carTab(this,'vegetais')">🫒 Óleos Vegetais (14)</button>
       <button class="chip" onclick="carTab(this,'macerados')">🌿 Macerados (6)</button>
       <button class="chip" onclick="carTab(this,'hidrolatos')">💧 Hidrolatos</button>
       <button class="chip" onclick="carTab(this,'geis')">🧴 Géis</button>
+      <button class="chip" onclick="carTab(this,'argilas')">🏺 Argilas (9)</button>
     </div>
     <div class="search-wrap">
       <span class="search-icon">🔍</span>
@@ -775,9 +921,332 @@ header p{margin-top:10px;color:var(--muted);font-size:0.9rem;font-weight:300;let
         </ul>
       </div>
 
+      <div class="guia-card" style="grid-column:1/-1">
+        <div class="guia-title">🛡️ Ação Antioxidante & Anti-mutagênica</div>
+        <div class="guia-body" style="margin-bottom:10px">Os óleos essenciais atuam como <strong>protetores celulares</strong> — inibem a penetração de agentes mutagênicos, capturam radicais livres e ativam enzimas antioxidantes celulares. A cada ano trocamos praticamente todas as células do corpo: o uso regular de OEs permite que atuem preventivamente na divisão celular saudável.</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+          <div>
+            <div class="m-sec-title" style="margin-bottom:6px">🏆 Maior atividade antioxidante</div>
+            <ul class="guia-list">
+              <li>Cravo da Índia (eugenol)</li>
+              <li>Lavanda Francesa</li>
+              <li>Alecrim QT Cineol (1,8-cineol)</li>
+              <li>Eucalipto Globulus</li>
+              <li>Manjericão</li>
+              <li>Canela do Ceilão</li>
+              <li>Tomilho (timol, carvacrol)</li>
+              <li>Orégano (carvacrol)</li>
+            </ul>
+          </div>
+          <div>
+            <div class="m-sec-title" style="margin-bottom:6px">🍋 Anti-mutagênicos (cítricos)</div>
+            <ul class="guia-list">
+              <li>Limão Siciliano</li>
+              <li>Laranja Doce</li>
+              <li>Grapefruit</li>
+              <li>Bergamota</li>
+              <li>Tangerina / Mandarina</li>
+              <li>Lima da Pérsia</li>
+            </ul>
+            <div class="guia-body" style="font-size:.75rem;margin-top:8px;color:var(--muted)">Fonte: <em>Câncer e Óleos Essenciais</em> — compilação de estudos sobre atividade antiproliferativa e imunomoduladora</div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
+
+      <!-- QUALIDADE -->
+      <div class="guia-card">
+        <div class="guia-title">🔍 Como Identificar um OE Puro</div>
+        <div class="guia-body" style="margin-bottom:8px">7 critérios para garantir qualidade terapêutica (André Ferraz):</div>
+        <ul class="guia-list">
+          <li>🫙 Nunca vendido em <strong>vidro transparente</strong> — UV degrada o óleo</li>
+          <li>🎨 <strong>Sem cores extravagantes</strong> (roxo, lilás, vermelho escuro) — exceto raras exceções</li>
+          <li>💧 <strong>Não se dissolve facilmente</strong> na água</li>
+          <li>🚫 <strong>Sem cheiro de álcool</strong> ou óleo de cozinha — adulterado</li>
+          <li>💰 Óleos naturais <strong>não custam o mesmo entre si</strong> — rosa ≠ lavanda em preço</li>
+          <li>⏳ Óleos naturais <strong>duram mais na pele</strong> como perfume que os sintéticos</li>
+          <li>🧪 Empresa deve oferecer <strong>cromatografias (CG-MS)</strong> de análise por lote</li>
+        </ul>
+        <div class="m-warn" style="margin-top:10px">Óleos essenciais sintéticos têm 1–3 substâncias. Os naturais possuem 50–450 compostos — uma obra prima sinergicamente orquestrada. Para uso terapêutico: 100% natural, 100% puro, 100% completo.</div>
+      </div>
+
+      <!-- PERFUMARIA -->
+      <div class="guia-card" style="grid-column:1/-1">
+        <div class="guia-title">🎵 Arte da Perfumaria: Notas de Aroma</div>
+        <div class="guia-body" style="margin-bottom:10px">A arte da perfumaria, como a música, é feita de notas. Quando usadas em harmonia, se complementam criando uma sinergia memorável. A proporção geral: <strong>Cabeça 5–20% · Coração 50–80% · Base 5–20%</strong>.</div>
+        <div style="overflow-x:auto">
+          <table class="dil-table" style="min-width:500px">
+            <tr><th>Nota</th><th>Óleo Essencial</th><th>Aroma</th><th>Intensidade (1–5)</th></tr>
+            <tr><td colspan="4" style="background:rgba(255,183,77,.12);font-weight:700;color:var(--petal);padding:6px 10px">🍋 NOTAS DE CABEÇA — Evaporam rápido, primeiro impacto</td></tr>
+            <tr><td>Cabeça</td><td>Laranja Doce</td><td>Fresco, cítrico, frutado, doce</td><td>⭐</td></tr>
+            <tr><td>Cabeça</td><td>Bergamota</td><td>Doce, vivo, cítrico, frutado</td><td>⭐⭐</td></tr>
+            <tr><td>Cabeça</td><td>Grapefruit</td><td>Fresco, limpo, doce, cítrico</td><td>⭐⭐</td></tr>
+            <tr><td>Cabeça</td><td>Limão Siciliano</td><td>Doce, penetrante, claro, cítrico</td><td>⭐⭐⭐</td></tr>
+            <tr><td>Cabeça</td><td>Capim-Limão</td><td>Gramíneo, limonado, pungente, terroso</td><td>⭐⭐⭐⭐</td></tr>
+            <tr><td colspan="4" style="background:rgba(107,155,122,.12);font-weight:700;color:var(--sage);padding:6px 10px">🌿 NOTAS DE CORAÇÃO — Corpo principal da sinergia</td></tr>
+            <tr><td>Coração</td><td>Lavanda Francesa</td><td>Floral, doce, balsâmico, floresta</td><td>⭐⭐</td></tr>
+            <tr><td>Coração</td><td>Gerânio</td><td>Doce, verde, cítrico-rosado, fresco</td><td>⭐⭐⭐</td></tr>
+            <tr><td>Coração</td><td>Cipreste</td><td>Fresco, herbáceo, levemente amadeirado</td><td>⭐⭐⭐</td></tr>
+            <tr><td>Coração</td><td>Eucalipto Globulus</td><td>Levemente canforado, fresco, pungente</td><td>⭐⭐⭐</td></tr>
+            <tr><td>Coração</td><td>Tea Tree</td><td>Medicinal, fresco, amadeirado, terroso</td><td>⭐⭐⭐</td></tr>
+            <tr><td>Coração</td><td>Alecrim</td><td>Forte, canforado, levemente amadeirado</td><td>⭐⭐⭐</td></tr>
+            <tr><td>Coração</td><td>Ylang Ylang</td><td>Doce, pesado, narcótico, tropical, floral</td><td>⭐⭐⭐⭐⭐</td></tr>
+            <tr><td>Coração</td><td>Sálvia Esclaréia</td><td>Condimentado, feno, penetrante, fixador</td><td>⭐⭐⭐</td></tr>
+            <tr><td colspan="4" style="background:rgba(93,64,55,.1);font-weight:700;color:var(--deep);padding:6px 10px">🪵 NOTAS DE BASE — Últimas a se dissipar, dão profundidade</td></tr>
+            <tr><td>Base</td><td>Incenso / Olíbano</td><td>Rico, profundo, quente, balsâmico, doce</td><td>⭐⭐⭐</td></tr>
+            <tr><td>Base</td><td>Sândalo</td><td>Suave, amadeirado, doce, terroso, balsâmico</td><td>⭐⭐⭐</td></tr>
+            <tr><td>Base</td><td>Vetiver</td><td>Pesado, terroso, balsâmico, tabaco</td><td>⭐⭐⭐⭐⭐</td></tr>
+            <tr><td>Base</td><td>Mirra</td><td>Quente, terroso, amadeirado, balsâmico</td><td>⭐⭐⭐⭐</td></tr>
+            <tr><td>Base</td><td>Patchouli</td><td>Suave, terroso, oriental, quente</td><td>⭐⭐⭐⭐</td></tr>
+          </table>
+        </div>
+        <div class="guia-body" style="margin-top:10px;font-size:.76rem;color:var(--muted)">Fonte: <em>Guia Completo da Aromaterapia</em> — André Ferraz. Óleos da mesma família botânica ou com constituintes químicos similares se misturam bem.</div>
+      </div>
+
+      <!-- SISTEMAS DO CORPO -->
+      <div class="guia-card" style="grid-column:1/-1">
+        <div class="guia-title">🫀 Sistemas do Corpo e seus Óleos Essenciais</div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px;margin-top:8px">
+          <div class="m-proto-card">
+            <div class="m-proto-cond">❤️ Sistema Cardiovascular</div>
+            <div class="guia-body">Laranja Doce · Cipreste</div>
+          </div>
+          <div class="m-proto-card">
+            <div class="m-proto-cond">🦠 Sistema Digestivo</div>
+            <div class="guia-body">Hortelã-Pimenta · Gengibre · Capim-Limão · Funcho</div>
+          </div>
+          <div class="m-proto-card">
+            <div class="m-proto-cond">💜 Emoções (Sistema Límbico)</div>
+            <div class="guia-body">Gerânio · Lavanda · Rosa · Bergamota · Camomilas</div>
+          </div>
+          <div class="m-proto-card">
+            <div class="m-proto-cond">⚙️ Sistema Reprodutor e Endócrino</div>
+            <div class="guia-body">Alecrim · Hortelã-Pimenta · Sálvia Esclaréia · Ylang Ylang · Tea Tree · Orégano · Canela</div>
+          </div>
+          <div class="m-proto-card">
+            <div class="m-proto-cond">🛡️ Sistema Imune e Linfático</div>
+            <div class="guia-body">Orégano · Tea Tree · Alecrim · Cravo · Incenso · Cipreste · Sândalo</div>
+          </div>
+          <div class="m-proto-card">
+            <div class="m-proto-cond">💪 Sistema Muscular</div>
+            <div class="guia-body">Hortelã-Pimenta · Copaíba · Gengibre · Alecrim</div>
+          </div>
+          <div class="m-proto-card">
+            <div class="m-proto-cond">🧠 Sistema Nervoso</div>
+            <div class="guia-body">Hortelã-Pimenta · Manjericão · Lavanda · Limão · Grapefruit · Incenso</div>
+          </div>
+          <div class="m-proto-card">
+            <div class="m-proto-cond">🌬️ Sistema Respiratório</div>
+            <div class="guia-body">Eucalipto · Hortelã-Pimenta · Abeto · Niaouli · Cajeput · Ravensara</div>
+          </div>
+          <div class="m-proto-card">
+            <div class="m-proto-cond">🦴 Sistema Esquelético</div>
+            <div class="guia-body">Cipreste · Cedro do Atlas · Cedro do Himalaia · Tea Tree · Gengibre</div>
+          </div>
+          <div class="m-proto-card">
+            <div class="m-proto-cond">🌸 Sistema Cutâneo</div>
+            <div class="guia-body">Lavanda · Gerânio · Rosa · Tea Tree · Copaíba · Vetiver · Ylang Ylang · Mirra · Néroli · Limão</div>
+          </div>
+        </div>
+        <div class="guia-body" style="margin-top:10px;font-size:.76rem;color:var(--muted)">Fonte: <em>Guia Completo da Aromaterapia</em> — André Ferraz</div>
+      </div>
+
+      <!-- QUÍMICA DOS ÓLEOS -->
+      <div class="guia-card" style="grid-column:1/-1">
+        <div class="guia-title">⚗️ Famílias Químicas dos Óleos Essenciais</div>
+        <div class="guia-body" style="margin-bottom:10px">Cada molécula tem uma <strong>ação terapêutica característica</strong>. Entender a química ajuda a prever os efeitos de qualquer óleo essencial.</div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px">
+          <div class="m-proto-card">
+            <div class="m-proto-cond">🌿 Monoterpenos (C10)</div>
+            <ul class="m-proto-list">
+              <li>Imunoestimulante · Expectorante balsâmico</li>
+              <li>Antisséptico atmosférico · Descongestionante</li>
+              <li><strong>Antioxidante</strong> — inúmeras ligações duplas capturam radicais livres</li>
+              <li>Ativação de penetração na pele</li>
+              <li><em>Ex: Olíbano, Abeto Douglas (α-pineno) · Laranja, Limão, Bergamota (limoneno)</em></li>
+            </ul>
+          </div>
+          <div class="m-proto-card">
+            <div class="m-proto-cond">🪨 Sesquiterpenos (C15)</div>
+            <ul class="m-proto-list">
+              <li>Anti-inflamatórios potentes · Calmantes</li>
+              <li>Descongestionante venoso e linfático</li>
+              <li>Antialérgicos · Cicatrizantes · <strong>Antioxidantes</strong></li>
+              <li><em>Ex: Copaíba, Ylang Ylang, Melissa, Gengibre (β-cariofileno/sesquiterpenos)</em></li>
+              <li><em>Camomila Alemã (camazuleno) · Pimenta Negra</em></li>
+            </ul>
+          </div>
+          <div class="m-proto-card" style="border-left:3px solid #ef5350">
+            <div class="m-proto-cond">⚠️ Fenóis</div>
+            <ul class="m-proto-list">
+              <li>Anti-infecciosos poderosos · Virucidas · Fungicidas</li>
+              <li>Imunoestimulantes · Antioxidantes</li>
+              <li><strong>Dermocáusticos puros · Hepatotóxicos em altas doses</strong></li>
+              <li><em>Ex: Tomilho (timol) · Orégano (carvacrol) · Cravo (eugenol)</em></li>
+            </ul>
+          </div>
+          <div class="m-proto-card">
+            <div class="m-proto-cond">🍃 Álcoois Monoterpênicos</div>
+            <ul class="m-proto-list">
+              <li>Anti-infeccioso de largo espectro · Antiviral · Antifúngico</li>
+              <li>Imunoestimulante · Neurotônico · Citofilático</li>
+              <li>Respeita a flora intestinal · Seguro</li>
+              <li><em>Ex: Lavanda (linalol) · Tea Tree (terpinen-4-ol) · Hortelã (mentol)</em></li>
+            </ul>
+          </div>
+          <div class="m-proto-card">
+            <div class="m-proto-cond">🌸 Ésteres</div>
+            <ul class="m-proto-list">
+              <li>Antiespasmódicos potentes · Reequilibrante nervoso</li>
+              <li>Antidepressivos · Excelentes para a pele</li>
+              <li><em>Ex: Lavanda Francesa, Bergamota (acetato de linalila)</em></li>
+              <li><em>Camomila Romana (angelato de butila)</em></li>
+            </ul>
+          </div>
+          <div class="m-proto-card">
+            <div class="m-proto-cond">🔵 Óxidos (1,8-Cineol)</div>
+            <ul class="m-proto-list">
+              <li>Imunoestimulantes · Descongestionantes broncopulmonares</li>
+              <li>Expectorantes e mucolíticos · Tônicos circulatórios</li>
+              <li><em>Ex: Eucalipto Globulus, Alecrim QT Cineol</em></li>
+            </ul>
+          </div>
+          <div class="m-proto-card">
+            <div class="m-proto-cond">🌿 Aldeídos (Citral)</div>
+            <ul class="m-proto-list">
+              <li>Anti-inflamatórios · Sedativos · Antidepressivos</li>
+              <li>Vasodilatadores · Antissépticos atmosféricos</li>
+              <li><em>Ex: Capim-Limão, Melissa (citral) · Eucalipto Citriodora (citronelal)</em></li>
+            </ul>
+          </div>
+          <div class="m-proto-card" style="border-left:3px solid #ab47bc">
+            <div class="m-proto-cond">⚠️ Cetonas</div>
+            <ul class="m-proto-list">
+              <li>Cicatrizante · Regeneradora do tecido cutâneo</li>
+              <li>Mucolítica · Lipolítica · Desclerosante</li>
+              <li><strong>Abortivas e neurotóxicas — cuidado na gestação</strong></li>
+              <li><em>Ex: Hortelã-Pimenta (mentona) · Alecrim QT Cânfora (cânfora)</em></li>
+            </ul>
+          </div>
+          <div class="m-proto-card">
+            <div class="m-proto-cond">🧘 Álcoois Sesquiterpênicos</div>
+            <ul class="m-proto-list">
+              <li>Tônicos gerais · Proteção celular · Hormônio-like</li>
+              <li>Descongestionante venoso e linfático</li>
+              <li><em>Ex: Patchouli (patchoulol) · Camomila Alemã (bisabolol) · Cedro (cedrol)</em></li>
+            </ul>
+          </div>
+        </div>
+        <div class="guia-body" style="margin-top:10px;font-size:.76rem;color:var(--muted)">Fonte: <em>Guia Completo da Aromaterapia</em> — André Ferraz · <em>Aromadermatology</em> — Bensouilah & Buck (2001)</div>
+      </div>
+
+      <!-- SEGURANÇA ESPECIAL -->
+      <div class="guia-card" style="grid-column:1/-1">
+        <div class="guia-title">👶 Segurança Especial: Crianças, Gestantes e Condições de Saúde</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+          <div>
+            <div class="m-sec-title" style="margin-bottom:8px">👶 Dosagem para Crianças na Pele</div>
+            <table class="dil-table">
+              <tr><th>Idade</th><th>Dose recomendada</th><th>Dose máxima</th></tr>
+              <tr><td>Recém-nascido</td><td colspan="2" style="text-align:center;color:#ef5350">NÃO USAR</td></tr>
+              <tr><td>Até 3 meses</td><td>0,1%</td><td>0,2%</td></tr>
+              <tr><td>3–24 meses</td><td>0,25%</td><td>0,5%</td></tr>
+              <tr><td>2–6 anos</td><td>1%</td><td>2%</td></tr>
+              <tr><td>6–15 anos</td><td>1,5%</td><td>3%</td></tr>
+              <tr><td>15+ anos</td><td>2,5%</td><td>5%</td></tr>
+            </table>
+            <div class="guia-body" style="font-size:.75rem;margin-top:6px;color:var(--muted)">⚠️ Óleos com 1,8-cineol ou mentol: nunca aplicar próximo ao rosto de bebês. Fonte: Tisserand, pág. 47</div>
+          </div>
+          <div>
+            <div class="m-sec-title" style="margin-bottom:8px">🤰 Gestação e Contraindicações</div>
+            <ul class="guia-list">
+              <li><strong>Gestantes:</strong> máx. 1% em aplicação dérmica · evitar fenóis (orégano, tomilho) e cetonas (tuiona, cânfora) — neurotóxicas e potencialmente abortivas</li>
+              <li><strong>Pressão baixa:</strong> cuidado com Lavanda, Ylang Ylang, Sálvia Esclaréia, Rosa, Jasmim</li>
+              <li><strong>Pressão alta:</strong> evitar Alecrim QT Cânfora e Lavanda Dentata</li>
+              <li><strong>Ação estrogênica:</strong> endometriose/CA hormonal — evitar Anis-estrelado, Funcho-doce, Erva-doce (trans-anetol)</li>
+              <li><strong>Epilepsia:</strong> alto risco sem medicação — evitar óleos ricos em cetonas e fenóis por via oral</li>
+              <li><strong>Doenças renais:</strong> evitar Wintergreen, Bétula doce, Junípero sabina, Sassafrás</li>
+              <li><strong>Fígado:</strong> evitar óleos ricos em tuiona, timol, carvacrol em altas doses</li>
+              <li><strong>Asma:</strong> máx. 1% · contra-indicado inalação direta</li>
+              <li><strong>Após massagem relaxante:</strong> não dirigir — Lavanda e Sálvia Esclaréia podem causar desorientação</li>
+            </ul>
+          </div>
+        </div>
+        <div class="m-proto-card" style="margin-top:12px;background:rgba(239,83,80,.07);border-color:rgba(239,83,80,.3)">
+          <div class="m-proto-cond" style="color:#ef5350">🆘 Primeiros Socorros em Reações Adversas</div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px;margin-top:6px">
+            <div><strong>Ingestão acidental:</strong> NÃO induza vômito · lave a boca com água · ligue para toxicologia (011) 3031-1857</div>
+            <div><strong>Inalação:</strong> ar fresco · respiração profunda · boca a boca se necessário</div>
+            <div><strong>Olhos:</strong> lavar com água corrente por 15 min · não feche os olhos · oftalmologista se persistir</div>
+            <div><strong>Pele:</strong> remover roupa · lavar com água e sabão 10 min · óleo vegetal para remover resíduo</div>
+          </div>
+        </div>
+        <div class="guia-body" style="margin-top:8px;font-size:.76rem;color:var(--muted)">Fonte: <em>Guia Completo da Aromaterapia</em> — André Ferraz · <em>Aromadermatology</em> — Bensouilah & Buck (2001)</div>
+      </div>
+
+      <!-- TRANSDERMAL -->
+      <div class="guia-card" style="grid-column:1/-1">
+        <div class="guia-title">🔬 Como os Óleos Essenciais Penetram a Pele (Transdermal)</div>
+        <div class="guia-body" style="margin-bottom:12px">Os OEs são <strong>lipofílicos</strong> — penetram mais facilmente nos lipídeos do estrato córneo quando estão em <strong>base aquosa</strong> (gel/creme) do que em base oleosa. Em base aquosa o OE é liberado para os tecidos mais rapidamente.</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px">
+          <div>
+            <div class="m-sec-title" style="margin-bottom:8px">🚪 Rotas de Penetração</div>
+            <ul class="guia-list">
+              <li><strong>Intercelular</strong> — atravessa os espaços entre células preenchidos de lipídeos (via principal)</li>
+              <li><strong>Folículos pilosos</strong> — entrada rápida mas menor área</li>
+              <li><strong>Dutos de suor</strong> e glândulas sebáceas (rota apendicial)</li>
+            </ul>
+            <div class="m-warn" style="margin-top:8px;font-size:.77rem">💡 Vantagem transdermal: evita metabolismo hepático e gastrointestinal — maior biodisponibilidade e duração dos efeitos.</div>
+          </div>
+          <div>
+            <div class="m-sec-title" style="margin-bottom:8px">⚡ Constituintes que Aumentam a Permeabilidade</div>
+            <ul class="guia-list">
+              <li><strong>Cânfora</strong> — Alecrim QT Cânfora, Canforeiro</li>
+              <li><strong>Eugenol</strong> — Cravo da Índia</li>
+              <li><strong>Mentol</strong> — Hortelã-Pimenta, Hortelã-do-Campo</li>
+              <li><strong>1,8-Cineol</strong> — Eucalipto Globulus (aumenta em até <strong>83×</strong> a penetração de outros ativos!)</li>
+              <li><strong>Limoneno</strong> — todos os cítricos</li>
+              <li><strong>Nerolidol</strong> — Néroli, Cabreúva, Niaouli</li>
+            </ul>
+          </div>
+        </div>
+        <div class="m-sec-title" style="margin-bottom:8px">🌿 Óleos que Aumentam Permeabilidade da Pele</div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px">
+          <span class="sint-tag" style="background:rgba(107,155,122,.1);border:1px solid rgba(107,155,122,.25);padding:3px 10px;border-radius:50px;font-size:.75rem">Eucalipto Globulus</span>
+          <span class="sint-tag" style="background:rgba(107,155,122,.1);border:1px solid rgba(107,155,122,.25);padding:3px 10px;border-radius:50px;font-size:.75rem">Hortelã-Pimenta</span>
+          <span class="sint-tag" style="background:rgba(107,155,122,.1);border:1px solid rgba(107,155,122,.25);padding:3px 10px;border-radius:50px;font-size:.75rem">Niaouli</span>
+          <span class="sint-tag" style="background:rgba(107,155,122,.1);border:1px solid rgba(107,155,122,.25);padding:3px 10px;border-radius:50px;font-size:.75rem">Ylang Ylang</span>
+          <span class="sint-tag" style="background:rgba(107,155,122,.1);border:1px solid rgba(107,155,122,.25);padding:3px 10px;border-radius:50px;font-size:.75rem">Laranja Doce</span>
+          <span class="sint-tag" style="background:rgba(107,155,122,.1);border:1px solid rgba(107,155,122,.25);padding:3px 10px;border-radius:50px;font-size:.75rem">Cajeput</span>
+          <span class="sint-tag" style="background:rgba(107,155,122,.1);border:1px solid rgba(107,155,122,.25);padding:3px 10px;border-radius:50px;font-size:.75rem">Melissa</span>
+          <span class="sint-tag" style="background:rgba(107,155,122,.1);border:1px solid rgba(107,155,122,.25);padding:3px 10px;border-radius:50px;font-size:.75rem">Citronela</span>
+          <span class="sint-tag" style="background:rgba(107,155,122,.1);border:1px solid rgba(107,155,122,.25);padding:3px 10px;border-radius:50px;font-size:.75rem">Cardamomo</span>
+          <span class="sint-tag" style="background:rgba(107,155,122,.1);border:1px solid rgba(107,155,122,.25);padding:3px 10px;border-radius:50px;font-size:.75rem">Manjericão</span>
+          <span class="sint-tag" style="background:rgba(107,155,122,.1);border:1px solid rgba(107,155,122,.25);padding:3px 10px;border-radius:50px;font-size:.75rem">Funcho Doce</span>
+          <span class="sint-tag" style="background:rgba(107,155,122,.1);border:1px solid rgba(107,155,122,.25);padding:3px 10px;border-radius:50px;font-size:.75rem">Anis Estrelado</span>
+        </div>
+        <div class="guia-body" style="font-size:.76rem;color:var(--muted)">Fonte: <em>Pele de Pétalas Módulo 6 — Aromaterapia Transdermal</em> · André Ferraz</div>
+      </div>
+
+      <!-- SENSIBILIZADORES DERMAIS -->
+      <div class="guia-card">
+        <div class="guia-title">⚠️ Sensibilizadores Dermais</div>
+        <div class="guia-body" style="margin-bottom:8px">Óleos <strong>não recomendados para uso prolongado</strong> (meses/anos) em massagens, pois podem causar sensibilização cumulativa. Alterne sempre com outros óleos:</div>
+        <table class="dil-table">
+          <tr><th>Óleo Essencial</th><th>Constituinte sensibilizador</th></tr>
+          <tr><td>Canela do Ceilão</td><td>Aldeído cinâmico</td></tr>
+          <tr><td>Cravo da Índia</td><td>Eugenol</td></tr>
+          <tr><td>Orégano</td><td>Carvacrol</td></tr>
+          <tr><td>Tomilho QT Timol</td><td>Timol</td></tr>
+          <tr><td>Cominho</td><td>Cuminal</td></tr>
+          <tr><td>Bay (Pimenta dioica)</td><td>Eugenol</td></tr>
+        </table>
+        <div class="guia-body" style="margin-top:8px;font-size:.76rem">⚠️ Irritação ≠ Sensibilização: a irritação é imediata e reversível. A sensibilização acontece depois de exposições repetidas e é <strong>imprevisível</strong> — uma vez desenvolvida, qualquer contato pode causar reação.</div>
+        <div class="guia-body" style="margin-top:6px;font-size:.75rem;color:var(--muted)">Fonte: <em>Pele de Pétalas Módulo 6</em> · Tisserand & Young, pág. 25</div>
+      </div>
 
 <!-- ═══════════ RECEITAS ARTESANAIS ═══════════ -->
 <div id="panel-receitas" class="panel">
@@ -791,6 +1260,110 @@ header p{margin-top:10px;color:var(--muted);font-size:0.9rem;font-weight:300;let
     <div class="rec-filter-row" id="rec-chips"></div>
     <div class="rec-grid" id="rec-grid"></div>
     <div class="notice">⚠️ Percentuais baseados nos Módulos 4 e 5 do Método Pele de Pétalas (André Ferraz). Cremes e loções requerem utensílios esterilizados com Álcool 70%. OEs dermocáusticos (canela, orégano, tomilho) máx. 1% tópico. Cítricos = fototóxicos — evite sol após aplicação.</div>
+  </div>
+</div>
+
+<!-- ═══════════ PSICOAROMATERAPIA ═══════════ -->
+<div id="panel-psicoaroma" class="panel">
+  <div class="wrap">
+    <h2 class="sec-title">🧠 Psicoaromaterapia</h2>
+    <p class="sec-sub">A relação entre olfato, emoções e pele · Módulo 7 — Pele de Pétalas</p>
+
+    <div class="psico-tabs">
+      <button class="psico-tab active" onclick="setPsicoTab('fundamentos',this)">🧬 Fundamentos</button>
+      <button class="psico-tab" onclick="setPsicoTab('estados',this)">💭 Estados Emocionais</button>
+      <button class="psico-tab" onclick="setPsicoTab('pele',this)">🌸 Pele & Emoções</button>
+    </div>
+
+    <!-- FUNDAMENTOS -->
+    <div id="psico-fundamentos" class="psico-section">
+      <div class="psico-info-card">
+        <h3>🌬️ Como o Olfato Chega ao Cérebro</h3>
+        <p>O olfato é o único sentido com acesso <strong>direto</strong> ao sistema límbico — o centro das emoções e memórias. Todos os outros sentidos passam primeiro pelo tálamo (triagem racional). O aroma não: ele vai direto ao cérebro emocional.</p>
+        <div class="psico-pathway">
+          <div class="psico-step">👃<br><small>Molécula aromática</small></div>
+          <div class="psico-arrow">→</div>
+          <div class="psico-step">🔵<br><small>Epitélio olfativo<br>(nariz)</small></div>
+          <div class="psico-arrow">→</div>
+          <div class="psico-step">⚡<br><small>Nervo olfativo<br>(bulbo olfativo)</small></div>
+          <div class="psico-arrow">→</div>
+          <div class="psico-step">💜<br><small>Sistema límbico<br>(amígdala + hipocampo)</small></div>
+          <div class="psico-arrow">→</div>
+          <div class="psico-step">🧪<br><small>Hipotálamo<br>(hormônios + SNA)</small></div>
+        </div>
+        <p style="margin-top:12px">Por isso um aroma pode mudar seu estado emocional em <strong>segundos</strong> — antes de você pensar conscientemente sobre ele.</p>
+      </div>
+
+      <div class="psico-brain-grid">
+        <div class="psico-brain-card" style="border-top:4px solid #ef5350">
+          <div class="psico-brain-title">🦎 Cérebro Reptiliano</div>
+          <div class="psico-brain-sub">Tronco cerebral · Cerebelo</div>
+          <p>Instintos de sobrevivência, respiração, ritmo cardíaco, reflexos. Atua antes da consciência. Óleos enraizadores (vetiver, patchouli) falam diretamente a este nível — criam sensação de segurança física.</p>
+          <div class="psico-brain-oleos">Vetiver · Patchouli · Cedro · Mirra</div>
+        </div>
+        <div class="psico-brain-card" style="border-top:4px solid #42a5f5">
+          <div class="psico-brain-title">🐾 Cérebro Mamífero</div>
+          <div class="psico-brain-sub">Sistema límbico · Hipocampo · Amígdala</div>
+          <p>Emoções, vínculos, memória afetiva, sistema imune. Centro do processamento emocional. A maioria dos óleos essenciais terapêuticos atua aqui, modulando neurotransmissores como serotonina, dopamina e GABA.</p>
+          <div class="psico-brain-oleos">Lavanda · Bergamota · Gerânio · Rosa · Neroli · Ylang Ylang</div>
+        </div>
+        <div class="psico-brain-card" style="border-top:4px solid #66bb6a">
+          <div class="psico-brain-title">🧠 Neocórtex</div>
+          <div class="psico-brain-sub">Córtex pré-frontal · Lóbulos</div>
+          <p>Raciocínio, linguagem, criatividade, planejamento. Óleos estimulantes (alecrim, hortelã, limão) amplificam as funções cognitivas, melhoram memória e velocidade de processamento.</p>
+          <div class="psico-brain-oleos">Alecrim · Hortelã-Pimenta · Limão · Eucalipto</div>
+        </div>
+      </div>
+
+      <div class="psico-info-card" style="margin-top:20px;border-left:4px solid #ff9800">
+        <h3>🌀 A Ciência do Aroma: Fenômeno de Proust</h3>
+        <p>O olfato é único entre os sentidos: o aroma é processado pelo <strong>sistema olfativo</strong>, conectado diretamente ao <strong>sistema límbico</strong> — onde emoções e memórias são armazenadas. A isso se chama <em>"Fenômeno de Proust"</em>: todos têm a capacidade de experimentar uma resposta emocional distinta ao inalar aromas, com base em memórias e experiências pessoais.</p>
+        <p>O sistema límbico produz uma resposta ao aroma baseada nas memórias associadas — criando uma onda de sentimentos. Por isso óleos essenciais podem mudar seu estado emocional em <strong>segundos</strong>, antes da mente consciente processar.</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px">
+          <div style="background:rgba(255,152,0,.08);border:1px solid rgba(255,152,0,.25);border-radius:10px;padding:12px">
+            <div style="font-weight:700;font-size:.8rem;color:#e65100;margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em">⚡ Óleos Estimulantes</div>
+            <p style="font-size:.8rem;margin:0;color:var(--muted)">Óleos <strong>cítricos</strong> (limoneno, β-pineno, monoterpenos) e <strong>mentolados</strong> (cetonas) são energizantes. Especiarias com fenóis têm efeito aquecedor e ativador.</p>
+            <div style="margin-top:8px;font-size:.78rem;color:var(--deep)">🍋 Laranja · Bergamota · Grapefruit · Limão<br>🌿 Hortelã · Alecrim · Gengibre · Cravo</div>
+          </div>
+          <div style="background:rgba(103,58,183,.08);border:1px solid rgba(103,58,183,.25);border-radius:10px;padding:12px">
+            <div style="font-weight:700;font-size:.8rem;color:#4527a0;margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em">🌊 Óleos Calmantes</div>
+            <p style="font-size:.8rem;margin:0;color:var(--muted)">Óleos <strong>florais</strong> (álcoois monoterpênicos) têm propriedades calmantes. Óleos de árvore, erva e grama (sesquiterpenos, ésteres, óxidos) promovem enraizamento e renovação.</p>
+            <div style="margin-top:8px;font-size:.78rem;color:var(--deep)">🌸 Lavanda · Gerânio · Ylang Ylang · Rosa<br>🪵 Vetiver · Patchouli · Cedro · Sândalo</div>
+          </div>
+        </div>
+        <div class="m-warn" style="margin-top:10px;font-size:.78rem">💡 Como nossas reações são baseadas em experiências pessoais, memórias, preferências e composição genética — cada pessoa pode ter uma resposta diferente ao mesmo óleo. O aromaterapeuta deve sempre respeitar a <strong>experiência individual</strong>.</div>
+        <div class="guia-body" style="margin-top:6px;font-size:.75rem;color:var(--muted)">Fonte: <em>O Poder dos Óleos Essenciais</em> — Marizete Neves · Sistema de Aromaterapia Emocional dōTERRA</div>
+      </div>
+
+            <div class="psico-info-card" style="margin-top:20px">
+        <h3>🔗 Sistema PSICO-NEURO-IMUNO-CUTÂNEO (SNIC)</h3>
+        <p>A pele não é apenas uma barreira física — é um <strong>órgão neuro-imuno-endócrino</strong>. Ela produz e responde aos mesmos hormônios e neurotransmissores do cérebro.</p>
+        <div class="psico-pathway" style="flex-wrap:wrap;gap:12px;justify-content:center;margin-top:16px">
+          <div class="psico-snic-box" style="background:#f3e5f5">🧠 Psique<br><small>emoções, crenças, stress</small></div>
+          <div class="psico-snic-arrow">⟷</div>
+          <div class="psico-snic-box" style="background:#e3f2fd">🧬 Neurológico<br><small>nervos, neurotransmissores</small></div>
+          <div class="psico-snic-arrow">⟷</div>
+          <div class="psico-snic-box" style="background:#e8f5e9">🛡️ Imunológico<br><small>inflamação, defesa</small></div>
+          <div class="psico-snic-arrow">⟷</div>
+          <div class="psico-snic-box" style="background:#fff3e0">🌸 Cutâneo<br><small>pele, folículos, sebáceas</small></div>
+        </div>
+        <p style="margin-top:14px">Estresse crônico → cortisol elevado → inflamação sistêmica → acne, eczema, psoríase, rosácea. <strong>Tratar só a pele sem tratar a emoção é tratar o sintoma sem a causa.</strong></p>
+      </div>
+    </div>
+
+    <!-- ESTADOS EMOCIONAIS -->
+    <div id="psico-estados" class="psico-section" style="display:none">
+      <p class="sec-sub" style="margin-bottom:16px">✅ = você tem em estoque · Protocolos com difusor, inalação e massagem</p>
+      <div class="emoc-grid" id="psico-estados-grid"></div>
+    </div>
+
+    <!-- PELE & EMOÇÕES -->
+    <div id="psico-pele" class="psico-section" style="display:none">
+      <p class="sec-sub" style="margin-bottom:16px">A linguagem emocional das condições de pele — abordagem integrativa</p>
+      <div class="pele-emoc-grid" id="psico-pele-grid"></div>
+      <div class="notice" style="margin-top:20px">⚠️ A abordagem psicoaromaterapêutica é <strong>complementar</strong> — não substitui tratamento médico dermatológico. Use como ferramenta de autoconhecimento e cuidado integral.</div>
+    </div>
+
   </div>
 </div>
 
@@ -934,6 +1507,7 @@ const OLEOS = [
    desc:"Trata dermatites, psoríase, acne e alergias. Excelente para relaxar, liberar medos e ansiedade."},
   {nome:"Alecrim QT Cânfora",latin:"Rosmarinus officinalis",emoji:"🌿",tags:["cabelo","dor","emocional","respiratório"],warn:false,
    pele:"Caspa, queda de cabelo. Contraturas musculares, cãibras.",
+   cabelo:"Estimula os folículos pilosos e combate a queda capilar. Rico em antioxidantes que protegem o folículo dos radicais livres. Propriedades anti-seborreicas e reduz a ação do DHT (hormônio da calvície). Protocolo: 5–10% em jojoba para massagem capilar diária.",
    emocional:"O 'óleo dos estudantes': foco, motivação, memória, combate cansaço mental.",
    outros:"Bronquite, sinusite, rinite. Ação bactericida, fungicida.",
    desc:"Ótimo para caspa e queda capilar. Dores musculares. O óleo dos estudantes: foco e memória."},
@@ -987,8 +1561,9 @@ const OLEOS = [
    emocional:"Ansiedade, insônia, estresse, medo, traumas emocionais como abusos sexuais.",
    outros:"Distúrbios hormonais femininos, menopausa, menstruação irregular, cólicas. Problemas digestivos e urinários. Antibacteriana, antifúngica.",
    desc:"Anti-inflamatória potente. Dermatite, rosácea, alergias. Ansiedade, insônia, traumas."},
-  {nome:"Camomila Romana",latin:"Anthemis nobilis",emoji:"🌼",tags:["pele","emocional"],warn:false,
+  {nome:"Camomila Romana",latin:"Anthemis nobilis",emoji:"🌼",tags:["pele","emocional","cabelo"],warn:false,
    pele:"Olheiras, pele seca, alergias, acne, psoríase, rugas, alopecia areata.",
+   cabelo:"Clareia cabelos naturalmente e realça tons dourados nos fios. Cria uma camada que sela os fios e os mantém hidratados, devolvendo brilho natural. Protege o couro cabeludo de inflamações e reduz frizz, deixando os cabelos mais alinhados. Protocolo: 3% em óleo de amêndoas ou jojoba para massagem e finalização.",
    emocional:"Ansiolítico. Ansiedade, pânico, fobias, insônia, traumas infantis, serenidade. Dissolve pensamentos negativos.",
    outros:"Náuseas, vômitos, diarreia, aftas.",
    desc:"Ansiolítico potente. Pele seca, olheiras, acne. Pânico, fobias e traumas infantis."},
@@ -1004,6 +1579,7 @@ const OLEOS = [
    desc:"Antifúngico e antibacteriano. Celulite, gordura localizada. Ansiedade e meditação."},
   {nome:"Cedro do Atlas",latin:"Cedrus atlantica",emoji:"🌲",tags:["pele","cabelo","emocional","respiratório","antifúngico"],warn:false,
    pele:"Acne, oleosidade, dermatite, psoríase, olheiras, herpes, celulite, rejuvenescimento, proteção solar.",
+   cabelo:"Estimula os folículos pilosos aumentando a circulação no couro cabeludo. Promove crescimento capilar e retarda a queda. Eficaz em alopecia areata e cabelos finos. Protocolo: 3–5% em jojoba para massagem no couro cabeludo.",
    emocional:"Tranquilidade, força interior, flexibilidade, coragem. Superação de relações conflituosas.",
    outros:"Caspa, alopecia areata. Descongestionante, expectorante. Antifúngico. Estimulante do prazer masculino.",
    desc:"Acne, oleosidade, celulite, caspa. Antifúngico. Tranquilidade e força interior."},
@@ -1032,11 +1608,30 @@ const OLEOS = [
    emocional:"Dissolve raiva e nervosismo. Apego excessivo. Revitalizante.",
    outros:"Repelente: pulgas e mosquitos. Auxilia emagrecimento.",
    desc:"Bactericida, fungicida. Repelente eficaz. Higiene bucal. Dissolve raiva."},
-  {nome:"Copaíba",latin:"Copaifera sp.",emoji:"🌳",tags:["pele","cabelo","dor","emocional"],warn:false,
-   pele:"Ferimentos, peles sensíveis, dermatite, psoríase, olheiras, manchas escuras, cloasmas, lábios rachados, cicatrização, depilação.",
-   emocional:"Equilíbrio do humor, reduz ansiedade e impaciência, estabilidade e confiança.",
-   outros:"Dores em geral, artrite, tendinite. Saúde capilar. Anti-inflamatório (2× mais eficaz que diclofenaco). Vulnerário.",
-   desc:"Anti-inflamatório potentíssimo. Dermatite, manchas, cicatrização. Estabilidade emocional."},
+  {nome:"Copaíba",latin:"Copaifera officinalis",emoji:"🌳",tags:["pele","cabelo","dor","emocional"],warn:false,
+   pele:"Ferimentos, peles sensíveis, dermatite, psoríase, olheiras, manchas escuras, cloasmas, lábios rachados, cicatrização, depilação. Acne, seborréia, furúnculos, herpes, queimaduras, alergias, eczemas, frieira, ressecamento, micoses. Regenera e rejuvenescece a pele.",
+   emocional:"Equilíbrio do humor, reduz ansiedade e impaciência, estabilidade e confiança. Sentimentos de renovação, calma e animação. Combate estresse e emoções negativas.",
+   outros:"Anti-inflamatório potente (β-cariofileno 50% — 2× mais que diclofenaco). Artrite, reumatismo, tendinite, bursite, gota, artrose, dores musculares. Sistema respiratório: sinusite, bronquite, catarro, asma. Saúde capilar: caspa, queda, couro cabeludo. Antisséptico, cicatrizante, emoliente, diurético, expectorante.",
+   cabelo:"Queda de cabelo, caspa, seborréia do couro cabeludo. Cicatrizante do couro cabeludo. Estimulante. Aplicar diluído 2–3% no couro cabeludo.",
+   protocolos:[
+     {cond:"Pele (uso tópico)",itens:[
+       "Aplicar pequena quantidade sobre a área afetada 3×/dia",
+       "Diluir 2–5% em óleo vegetal (amêndoas, jojoba) para uso facial",
+       "Para artrite: amornar o óleo e aplicar até 2×/dia no local"
+     ]},
+     {cond:"Uso interno (protocolo de adaptação)",itens:[
+       "Semana 1: 1 gt/dia após café da manhã",
+       "Semana 2: 2 gts/dia (manhã + almoço)",
+       "Semana 3: 3 gts/dia (manhã, almoço, jantar)",
+       "Semana 4+: dose normal = 2 gts 3×/dia",
+       "Manutenção: 6 gts 1×/dia (somente OE 100% puro, alimentar)"
+     ]},
+     {cond:"Combinações para sinergias",itens:[
+       "Todos os cítricos · Lavanda · Gerânio · Ylang Ylang",
+       "Patchouli · Alecrim · Eucalipto · Cedro · Sândalo · Tea Tree"
+     ]}
+   ],
+   desc:"Anti-inflamatório potentíssimo (β-cariofileno). Dermatite, manchas, cicatrização. Acne, eczema, herpes. Estabilidade emocional. Origem: Amazônia brasileira."},
   {nome:"Cravo da Índia",latin:"Syzygium aromaticum",emoji:"🌿",tags:["pele","emocional","antifúngico"],warn:false,
    pele:"Verrugas, micoses, saúde das unhas. Antifúngico e antibacteriano.",
    emocional:"Elimina necessidade de controle, relaxamento mental, equilíbrio, bom humor.",
@@ -1104,6 +1699,7 @@ const OLEOS = [
    desc:"Pele mista e oleosa, acne. Higiene bucal. Foco e concentração."},
   {nome:"Hortelã Pimenta",latin:"Mentha x piperita",emoji:"🌿",tags:["pele","cabelo","emocional","respiratório","dor"],warn:false,
    pele:"Manchas escuras, acne, oleosidade, gordura localizada. Potencializa penetração dos óleos (mentol).",
+   cabelo:"Estimula o crescimento capilar através do aumento da circulação sanguínea no couro cabeludo. Rico em mentol — elimina o excesso de oleosidade e previne caspa. Propriedades antissépticas e antimicrobianas deixam os fios brilhosos e saudáveis. Protocolo: 2–3% em óleo vegetal para massagem capilar — use com moderação (refrescante intenso).",
    emocional:"Relaxamento mental, concentração, atenção, purifica ambientes, medo, depressão.",
    outros:"Doenças respiratórias, gripes, enjoo, dores de cabeça e enxaqueca. Saúde e crescimento capilar.",
    desc:"Potencializador de penetração (mentol). Manchas, acne, enxaqueca. Concentração."},
@@ -1132,8 +1728,9 @@ const OLEOS = [
    emocional:"Ansiedade, tristeza, alegria, leveza, vontade de viver, depressão.",
    outros:"Emagrecimento, dor de cabeça. Sistema digestivo.",
    desc:"Rejuvenescimento, celulite. Alegria, leveza e antidepressivo. ⚠️ Fototóxico."},
-  {nome:"Lavanda Francesa",latin:"Lavandula angustifolia",emoji:"💜",tags:["pele","hormonal","emocional","dor","antifúngico"],warn:false,
+  {nome:"Lavanda Francesa",latin:"Lavandula angustifolia",emoji:"💜",tags:["pele","hormonal","emocional","dor","antifúngico","cabelo"],warn:false,
    pele:"Dermatites, alergias, queimaduras, acne, psoríase, feridas. Cicatrizante, vulnerário.",
+   cabelo:"Estimula crescimento capilar com efeitos comprovados em estudos. Alcança a profundidade dos folículos e espessa a camada térmica. Antimicrobiano — combate distúrbios bacterianos e fúngicos do couro cabeludo. Acalma o couro cabeludo seco e irritado. O estresse emocional causa queda: a lavanda reduz o estresse, combatendo indiretamente a alopécia. Protocolo: 5–8% em jojoba ou amêndoas para massagem capilar.",
    emocional:"Prazer feminino, insônia, ansiedade, medo, insegurança. Meditação. Antidepressivo.",
    outros:"Analgésico, cólicas, saúde capilar. Bactericida, antifúngico. Imunoestimulante. Citofilático.",
    desc:"O óleo mais versátil. Dermatite, queimaduras, acne. Insônia e ansiedade. Citofilático."},
@@ -1234,6 +1831,7 @@ const OLEOS = [
    desc:"O mais precioso. Rejuvenescimento, rugas, colágeno. TPM. Amor próprio. Citofilático."},
   {nome:"Sálvia Esclaréia",latin:"Salvia sclarea",emoji:"💜",tags:["pele","hormonal","cabelo","emocional"],warn:false,
    pele:"Cloasmas, escaras, queimaduras, celulite, transpiração excessiva, oleosidade, caspa.",
+   cabelo:"O acetato de linalila regula a produção de óleo no couro cabeludo. Alivia estresse e equilibra hormônios — sendo eficaz contra queda capilar por estresse (eflúvio telógeno). Combate três tipos de alopecia associadas ao estresse: eflúvio telógeno, tricotilomania e alopecia areata. Protocolo: 3–5% em jojoba para massagem capilar, especialmente em períodos de estresse intenso.",
    emocional:"Amor próprio, autoconfiança, estresse, ansiedade, feminilidade, sabedoria. Meditação.",
    outros:"TPM, menopausa, infertilidade, infecções genitais. Afrodisíaco e libido.",
    desc:"Cloasmas, celulite, caspa. TPM e menopausa. Amor próprio. Afrodisíaco."},
@@ -1262,10 +1860,25 @@ const OLEOS = [
    emocional:"Acalma, dissolve mágoas, traumas e sentimentos negativos.",
    outros:"Hormônios femininos, imunidade, saúde hepática.",
    desc:"Manchas escuras, acne, psoríase, alergias. Hormônios femininos. Dissolve mágoas."},
-  {nome:"Tea Tree",latin:"Melaleuca alternifolia",emoji:"🌿",tags:["pele","emocional","antifúngico"],warn:false,
-   pele:"Herpes, verrugas, micoses, caspas, psoríase, acne, manchas escuras, furúnculos, unhas amareladas. Cicatrização. Antibiótico natural.",
+  {nome:"Tea Tree",latin:"Melaleuca alternifolia",emoji:"🌿",tags:["pele","emocional","antifúngico","cabelo"],warn:false,
+   pele:"Herpes, verrugas, micoses, caspa, psoríase, acne, manchas escuras, furúnculos, unhas amareladas. Cicatrização. Antibiótico natural.",
    emocional:"Purifica emoções, alivia angústia e vitimismo, auto-observação.",
    outros:"Anti-inflamatório geral, imunidade. Bactericida, antifúngico, antiviral, microbicida. Imunoestimulante.",
+   cabelo:"Antifúngico e antibacteriano no couro cabeludo. Caspa, dermatite seborreica, couro cabeludo oleoso. Dissolve resíduos e foliculite capilar.",
+   protocolos:[
+     {cond:"Acne",itens:["5% em gel (5ml TT + 95ml gel) — 3–4x/dia por 3–7 dias","1 gt puro com cotonete no foco — 4x/dia"]},
+     {cond:"Herpes Labial",itens:["2 gt TT puro no foco — 4x/dia por 3–7 dias","3ml TT + 27ml OV Coco (10%) — 4x/dia","TT reduz em 98,2% a formação de placas virais de HSV-1 (Schnitzler, 2001)"]},
+     {cond:"Gengivite / Periodontite",itens:["3 gt TT + 20ml água — bochecho 2–3x/dia por 4–7 dias","20 gt TT + 1ml álcool + 50ml água — bochecho 2–3x/dia","2ml TT + 2ml Lavanda + 10ml OV — massagem gengival 3x/dia"]},
+     {cond:"Micose na Pele",itens:["2 gt TT puro no local — 3x/dia por 15–20 dias","5ml TT + 45ml OV Coco (10%) — 3x/dia por 15–20 dias","3ml TT + 1ml Hortelã + 10ml OV Coco (40%) — 3x/dia"]},
+     {cond:"Micose nas Unhas (Onicomicose)",itens:["2 gt TT puro na unha — 2x/dia por 3–6 meses","5ml TT + 45ml OV Coco (10%) — 3x/dia","TT 5% em creme igual ao clotrimazol em estudos clínicos (Buck, 1994)"]},
+     {cond:"Candidíase",itens:["1 gt TT por 20kg de peso — interno — 3x/dia por 20 dias","5ml TT + 45ml OV — tópico região — 3x/dia por 30–60 dias","5 gt + 3L água — banho de assento 1–2x/dia por 15–20 dias"]},
+     {cond:"Sinusite",itens:["10 gt TT + 5 gt Hortelã no difusor — 1x/noite por 30 dias","5ml TT + 5ml Hortelã + 90ml OV — tórax/costas — 3x/dia","1 gt TT sobre os seios da face — 6x/dia por 4 dias"]},
+     {cond:"Rinite",itens:["10 gt TT + 5 gt Hortelã no difusor — 1x/noite por 30 dias","2 gt TT num algodão, inalar — 6x/dia por 3–7 dias"]},
+     {cond:"Bronquite",itens:["5ml TT + 2ml Lavanda + 3ml Hortelã + 90ml OV — tórax — 3x/dia","10 gt TT + 5 gt Lavanda no difusor — 1x/noite","1 gt TT por 20kg peso — interno — 3x/dia por 15 dias"]},
+     {cond:"Molusco Contagioso",itens:["1 gt TT + 1 gt vinagre por foco com cotonete — 3x/dia por 30 dias","5ml TT + 45ml OV Coco — tópico — 3x/dia"]},
+     {cond:"Infecção Urinária",itens:["1 gt TT por 20kg de peso — interno — 3x/dia por 20 dias","5ml TT + 45ml OV — massagem região da bexiga — 3x/dia por 30–90 dias"]},
+     {cond:"Odontologia (Cárie / Periodontite)",itens:["Bochecho: 3 gt TT + 20ml água — 2–3x/dia","Bochecho TT 0,5% elimina bactérias bucais em 30 segundos (Hammer et al., 2003)","Reduz IL-1 e TNF-α em 40–50% (anti-inflamatório gengival)","Candidíase oral (resistente a fluconazol): TT solução oral — Jandourek et al. 1998","Alternativa natural à clorexidina — sem manchar dentes, com ação anti-inflamatória extra"]}
+   ],
    desc:"O antibiótico natural. Herpes, micoses, acne, verrugas. Purifica emoções."},
   {nome:"Tomilho",latin:"Thymus vulgaris",emoji:"🌿",tags:["emocional","respiratório","antifúngico"],warn:true,warnText:"⚠️ Dermocáustico — diluir no máximo 1–3%. Não usar puro na pele.",
    pele:"Ação fungicida, bactericida, repelente e antisséptica.",
@@ -1284,8 +1897,8 @@ const OLEOS = [
    desc:"Depilação, cicatrização, acne. Antidepressivo. Tranquilidade e aconchego."},
   {nome:"Vetiver",latin:"Vetiveria zizanioides",emoji:"🌾",tags:["pele","hormonal","dor","emocional"],warn:false,
    pele:"Manchas escuras, oleosidade, acne, cicatrização, queimaduras, escaras, cortes. Vulnerário.",
-   emocional:"Tranquilidade, organização, amor próprio, autoconfiança, aterramento. Afrodisíaco.",
-   outros:"Menopausa, dores musculares e reumáticas. Adstringente. Citofilático.",
+   emocional:"Aterramento profundo — traz o indivíduo de volta à terra quando a vida dispersa a energia. Auxilia autoconsciência e conexão com sentimentos. Desafia a evasão da dor: o alívio vem da viagem interna, não da fuga. Centra no momento presente e conduz à catarse emocional. Afrodisíaco. Emoções: apatia, depressão, dispersão, necessidade de escapar, estresse.",
+   outros:"Menopausa, dores musculares e reumáticas. Adstringente. Citofilático. Suporte imunológico (uso interno diluído). Relaxamento profundo: banho + 3 gt · Difusor com Lavanda para calmar emoções. Ótimo para massagem terapêutica. Raiz do sistema de origem: Vietnã.",
    desc:"Manchas escuras, acne, cicatrização. Menopausa. Amor próprio e aterramento."},
   {nome:"Wintergreen",latin:"Gaultheria procumbens",emoji:"🌿",tags:["dor","emocional"],warn:false,
    pele:"Depilações.",
@@ -1482,8 +2095,10 @@ function abrirModal(nome) {
     <div class="m-latin">${o.latin}</div>
     ${inStk?`<span class="tag-tem">✅ No seu estoque · ${inStk.qtd}</span><br><br>`:''}
     ${o.pele?`<div class="m-sec"><div class="m-sec-title">🌿 Pele & corpo</div><div class="m-sec-body">${o.pele}</div></div>`:''}
+    ${o.cabelo?`<div class="m-sec"><div class="m-sec-title">💇 Cabelo & couro cabeludo</div><div class="m-sec-body">${o.cabelo}</div></div>`:''}
     ${o.emocional?`<div class="m-sec"><div class="m-sec-title">💜 Psicoaromaterapia</div><div class="m-sec-body">${o.emocional}</div></div>`:''}
     ${o.outros?`<div class="m-sec"><div class="m-sec-title">⚕️ Propriedades & outros usos</div><div class="m-sec-body">${o.outros}</div></div>`:''}
+    ${o.protocolos?`<div class="m-sec"><div class="m-sec-title">📋 Protocolos Clínicos (Saúde em Gotas)</div><div class="m-proto-grid">${o.protocolos.map(p=>`<div class="m-proto-card"><div class="m-proto-cond">${p.cond}</div><ul class="m-proto-list">${p.itens.map(i=>`<li>${i}</li>`).join('')}</ul></div>`).join('')}</div></div>`:''}
     ${CROMATOGRAFIAS[o.nome] ? `
       <div class="m-sec">
         <div class="m-sec-title">🧪 Composição química (CG-MS)</div>
@@ -2402,6 +3017,63 @@ const MACERADOS = [
   {n:"Erva de Hipericão",l:"Hypericum perforatum",d:"Pequenas glândulas que liberam óleos vegetais essenciais e resinas quando pressionadas.",a:["Picadas de inseto","Machucados, queimaduras","Lesões de herpes","Tecidos lesionados, feridas de cicatrização lenta"],r:""}
 ];
 
+const ARGILAS = [
+  {n:'Argila Branca / Caulim', emoji:'⬜', cor:'#e0e0e0',
+   minerais:'Alumínio (rico)',
+   pele:'Peles sensíveis e delicadas. Absorve oleosidade sem desidratar. Leve esfoliação e queratinização. Clareia a pele, auxilia cicatrização. Útil em eczemas, dermatites, manchas e rachaduras.',
+   caulim:'A variedade Caulim é a mais delicada — especial para peles muito secas e ásperas.',
+   outros:'Antisséptica · Calmante da pele e nervos · Músculos tensos',
+   freq:'2-3×/sem pele oleosa · 1×/sem pele normal/seca'},
+  {n:'Argila Verde', emoji:'🟢', cor:'#66bb6a',
+   minerais:'Cobre, Cromo, Magnésio (pH neutro)',
+   pele:'Acne, furúnculos, abscessos (ação anti-inflamatória do cobre). Altamente purificadora — forte absorção de toxinas e oleosidade.',
+   caulim:'',
+   outros:'Vitaliza células · Acelera processos depurativos e desintoxicantes',
+   freq:'2-3×/sem pele oleosa · 1×/sem pele normal'},
+  {n:'Argila Dourada / Amarela', emoji:'🟡', cor:'#ffd54f',
+   minerais:'Ferro, Potássio',
+   pele:'Estimula a circulação. Contribui na queima de gordura localizada. Redução de medidas.',
+   caulim:'',
+   outros:'Absorvente de odores e fluidos · Laxativa · Compressas abdominais para prisão de ventre',
+   freq:'1-2×/sem'},
+  {n:'Argila Roxa', emoji:'🟣', cor:'#ab47bc',
+   minerais:'Ferro, Cobalto',
+   pele:'Potencial vasodilatador pelo cobalto — especial para varizes, má circulação e inchaços.',
+   caulim:'',
+   outros:'Revitalizante do corpo · Equilibra cãibras, espasmos e tremores',
+   freq:'1-2×/sem'},
+  {n:'Argila Cinza', emoji:'🩶', cor:'#90a4ae',
+   minerais:'Titânio, Enxofre, Oligoelementos',
+   pele:'Anti-inflamatória. Grande reposição de oligoelementos — melhora funcionamento natural das células.',
+   caulim:'',
+   outros:'Agiliza o processo curativo',
+   freq:'1-2×/sem'},
+  {n:'Argila Marrom', emoji:'🟤', cor:'#8d6e63',
+   minerais:'Ferro (rico)',
+   pele:'Aumenta oxigenação celular. Promove elasticidade — flacidez cutânea.',
+   caulim:'',
+   outros:'Reumatismo, artrite, bursite, inflamações',
+   freq:'1-2×/sem'},
+  {n:'Argila Preta / Lama Vulcânica', emoji:'⬛', cor:'#37474f',
+   minerais:'Titânio, Enxofre, Fósforo',
+   pele:'Tonificante — devolve firmeza natural e previne rugas. Acne, abscessos, furúnculos.',
+   caulim:'',
+   outros:'Revitalizante e energizante do corpo',
+   freq:'1-2×/sem'},
+  {n:'Argila Vermelha', emoji:'🔴', cor:'#ef5350',
+   minerais:'Ferro (mais rica)',
+   pele:'Estimula circulação e metabolismo. Revitaliza pele fria, seca, sem cor. Elasticidade e brilho. Rosácea. Tratamento de gordura localizada.',
+   caulim:'',
+   outros:'Desintoxicante · Tonificante das veias · Contra anemia',
+   freq:'1-2×/sem'},
+  {n:'Argila Rosa', emoji:'🌸', cor:'#f48fb1',
+   minerais:'Manganês (síntese de colágeno)',
+   pele:'Une efeito tonificante da vermelha + delicadeza da branca. Peles secas e sem vida. Rosácea. Propriedades antialérgicas (manganês).',
+   caulim:'',
+   outros:'Síntese de colágeno · Antialérgica',
+   freq:'1×/sem'}
+];
+
 let carActiveTab = 'vegetais';
 
 function carTab(btn, id) {
@@ -2464,6 +3136,37 @@ function renderCar() {
       <p>Podem ser usados para cuidados em ferimentos.</p>
       <div class="warn">⚠️ Validade: 12 meses fechado, 3 meses depois de aberto. A estocagem deve ser muito cuidadosa para evitar contaminação.</div>
     </div>`;
+  } else if (carActiveTab === 'argilas') {
+    wrap.innerHTML = `
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px 18px;margin-bottom:16px">
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--deep);margin-bottom:6px">🏺 Argilaterapia / Fangoterapia</h3>
+        <p style="font-size:.8rem;color:var(--muted);line-height:1.65">Argilas são substâncias naturais ricas em minerais. A estrutura física e o conteúdo mineral de cada argila determina seu efeito na pele. Todas absorvem toxinas e óleos em excesso — cada uma com um grau diferente.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px;margin-top:10px">
+          <div class="m-proto-card"><div class="m-proto-cond">📋 Benefícios Gerais</div><ul class="m-proto-list"><li>Absorver toxinas e impurezas</li><li>Remover sujeira dos poros</li><li>Aumentar circulação sanguínea e linfática</li><li>Tonificar o tecido conjuntivo</li><li>Promover esfoliação suave</li><li>Equilibrar as glândulas sebáceas</li><li>Relaxar as emoções</li><li>Rejuvenescer a pele</li></ul></div>
+          <div class="m-proto-card"><div class="m-proto-cond">🧪 Como Usar</div><ul class="m-proto-list"><li>¼ copo para máscara facial</li><li>1 copo para corpo inteiro</li><li>Misturar água até consistência pastosa</li><li>Aplicar e aguardar 20–40 min</li><li>Remover com água morna</li></ul></div>
+          <div class="m-proto-card"><div class="m-proto-cond">✨ Aditivos Possíveis</div><ul class="m-proto-list"><li>Óleos essenciais (poucas gotas)</li><li>Óleos vegetais</li><li>Mel · Sal · Café</li><li>Hidrolatos</li><li>Plantas e pétalas secas</li><li>Gel de aloe vera</li></ul></div>
+          <div class="m-proto-card"><div class="m-proto-cond">⏱️ Frequência</div><ul class="m-proto-list"><li>Pele oleosa: 2–3×/semana</li><li>Pele normal/mista: 1–2×/semana</li><li>Pele seca/sensível: 1×/semana</li></ul></div>
+        </div>
+        <div class="guia-body" style="margin-top:10px;font-size:.75rem;color:var(--muted)">Fonte: Pele de Pétalas Módulo 3 · André Ferraz · Adaptado de Laszlo & Santana, <em>Introdução à Aromatologia</em>, p.118</div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px">
+        ${ARGILAS.map(a => `
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 16px;border-top:4px solid ${a.cor}">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+              <span style="font-size:1.5rem">${a.emoji}</span>
+              <div>
+                <div style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;color:var(--deep)">${a.n}</div>
+                <div style="font-size:.72rem;color:var(--muted)">Minerais: ${a.minerais}</div>
+              </div>
+            </div>
+            <p style="font-size:.79rem;color:var(--muted);line-height:1.6;margin-bottom:7px">${a.pele}</p>
+            ${a.caulim ? `<p style="font-size:.77rem;color:var(--sage);font-style:italic;margin-bottom:7px">${a.caulim}</p>` : ''}
+            ${a.outros ? `<div style="font-size:.76rem;color:var(--deep);background:rgba(107,155,122,.06);border-radius:7px;padding:6px 9px;margin-bottom:6px">${a.outros}</div>` : ''}
+            <div style="font-size:.72rem;color:var(--muted)">⏱️ ${a.freq}</div>
+          </div>
+        `).join('')}
+      </div>`;
+    return;
   } else if (carActiveTab === 'geis') {
     wrap.innerHTML = `<div class="car-info-card">
       <h3>🧴 O que é o Gel como base carreadora</h3>
@@ -2497,11 +3200,287 @@ function goTab(id, btn) {
   document.getElementById('panel-'+id).classList.add('active');
   btn.classList.add('active');
   if (id==='bib') filtrarBib();
-  if (id==='sinergias') renderSin();
+  if (id==='sinergias') { if(sinMode==='cuidados'){renderCuidadosChips();renderSinCuidados();}else{renderSinChips();renderSin();} }
   if (id==='sintomas') renderSym();
   if (id==='tratamentos') renderTrt();
   if (id==='carreadores') renderCar();
   if (id==='receitas') renderRec();
+  if (id==='psicoaroma') renderPsico();
+}
+
+// ══════════════════════════════════════════════
+// SINERGIAS CUIDADOS GERAIS (Sinergias 1 — Pele de Pétalas)
+// ══════════════════════════════════════════════
+let sinMode = 'difusor';
+let cuidadosActiveCat = '';
+
+const CUIDADOS_CATS = [
+  {id:'pele-sensivel',  nome:'Pele Sensível',       emoji:'🌸', cor:'#c4956a'},
+  {id:'rugas',          nome:'Rugas & Anti-Idade',   emoji:'✨', cor:'#a85d4a'},
+  {id:'gordura',        nome:'Gordura Localizada',   emoji:'🏃', cor:'#6b9b7a'},
+  {id:'olheiras',       nome:'Olheiras',             emoji:'👁',  cor:'#7d6355'},
+  {id:'massagem',       nome:'Óleos de Massagem',    emoji:'💆', cor:'#c4956a'},
+  {id:'banho',          nome:'Banhos Terapêuticos',  emoji:'🛁', cor:'#6b9b7a'},
+  {id:'depilatorio',    nome:'Depilatório',          emoji:'🪒', cor:'#a85d4a'},
+  {id:'desodorante',    nome:'Desodorante',          emoji:'🌿', cor:'#6b9b7a'},
+  {id:'bucal',          nome:'Cuidado Bucal',        emoji:'🦷', cor:'#7d6355'},
+  {id:'drenagem',       nome:'Drenagem Linfática',   emoji:'🌊', cor:'#c4956a'},
+  {id:'contusoes',      nome:'Contusões',            emoji:'🩹', cor:'#a85d4a'},
+  {id:'alergias',       nome:'Alergias de Pele',     emoji:'💠', cor:'#6b9b7a'},
+  {id:'celulite',       nome:'Celulite',             emoji:'🍊', cor:'#c4956a'},
+  {id:'estrias',        nome:'Estrias',              emoji:'🌿', cor:'#6b9b7a'},
+  {id:'cicatrizacao',   nome:'Cicatrização',         emoji:'🌱', cor:'#6b9b7a'},
+  {id:'protetor',       nome:'Protetor Solar',       emoji:'☀️', cor:'#c4956a'},
+  {id:'caspa',          nome:'Caspa',                emoji:'💇', cor:'#7d6355'},
+  {id:'unhas',          nome:'Unhas',                emoji:'💅', cor:'#a85d4a'},
+  {id:'oleosidade',     nome:'Oleosidade',           emoji:'💧', cor:'#6b9b7a'},
+  {id:'pele-seca',      nome:'Pele Seca',            emoji:'🌵', cor:'#c4956a'}
+];
+
+const SINERGIAS_CUIDADOS = [
+  // 🌸 PELE SENSÍVEL
+  {n:'Equilíbrio Pele Sensível #1',c:'pele-sensivel',base:'10ml OV Amêndoas Doces',obs:'Aplicar suavemente 2x ao dia no rosto limpo.',
+   o:[['Camomila Alemã',3],['Lavanda Francesa',4],['Gerânio',3]]},
+  {n:'Equilíbrio Pele Sensível #2',c:'pele-sensivel',base:'10ml OV Jojoba',obs:'Aplicar 1x ao dia. Ideal para pele reativa e com rosácea.',
+   o:[['Copaíba',5],['Lavanda Francesa',4],['Gerânio',3]]},
+
+  // ✨ RUGAS E ANTI-IDADE
+  {n:'Rejuvenescimento Pele Madura',c:'rugas',base:'10ml OV Rosa Mosqueta + 5ml OV Jojoba',obs:'Aplicar 1x ao dia (noite). Massagear suavemente com movimentos circulares.',
+   o:[['Neroli',3],['Olíbano',4],['Mirra',2],['Gerânio',3]]},
+  {n:'Contorno dos Olhos',c:'rugas',base:'5ml OV Rosa Mosqueta',obs:'1-2 gotas ao redor dos olhos (nunca dentro). Aplicar antes de dormir com toque suave.',
+   o:[['Neroli',2],['Olíbano',2],['Camomila Romana',1]]},
+
+  // 🏃 GORDURA LOCALIZADA
+  {n:'Queima Geral',c:'gordura',base:'30ml OV Gergelim',obs:'Massagear vigorosamente nas áreas alvo 1-2x ao dia, preferencialmente antes de exercícios.',
+   o:[['Toranja',6],['Cipreste',5],['Gengibre',4],['Pimenta Preta',3]]},
+  {n:'Pronta pro Verão',c:'gordura',base:'30ml OV Gergelim',obs:'Massagear com movimentos circulares e ascendentes nas coxas e abdômen.',
+   o:[['Toranja',8],['Cipreste',6],['Gengibre',4]]},
+  {n:'Xô Gordurinha',c:'gordura',base:'30ml OV Gergelim',obs:'Massagear vigorosamente. Potencialize com drenagem linfática manual.',
+   o:[['Toranja',8],['Pimenta Preta',4],['Copaíba',4],['Cipreste',4]]},
+
+  // 👁 OLHEIRAS
+  {n:'Sempreviva Power',c:'olheiras',base:'5ml OV Rosa Mosqueta',obs:'Aplicar com toque suave antes de dormir. Resultado progressivo em 4-6 semanas.',
+   o:[['Olíbano',3],['Neroli',2],['Lavanda Francesa',2]]},
+  {n:'Camomila & Rosas',c:'olheiras',base:'5ml OV Rosa Mosqueta',obs:'Ideal para olheiras de origem vascular (arroxeadas). Aplicar suavemente 2x ao dia.',
+   o:[['Camomila Alemã',2],['Gerânio',3],['Neroli',2]]},
+  {n:'Olheira Não!',c:'olheiras',base:'5ml OV Amêndoas Doces',obs:'Aplicar com toque leve. Refrigerar o frasco para potencializar o efeito descongestionante.',
+   o:[['Neroli',2],['Camomila Romana',2],['Olíbano',2]]},
+
+  // 💆 ÓLEOS DE MASSAGEM
+  {n:'Sunshine (Manhã Luminosa)',c:'massagem',base:'30ml OV Amêndoas Doces',obs:'Massagear pelo corpo ao acordar. Evitar exposição solar por 12h (cítricos).',
+   o:[['Bergamota',5],['Gerânio',4],['Ylang Ylang',2],['Neroli',3]]},
+  {n:'Prazer Feminino',c:'massagem',base:'30ml OV Rosa Mosqueta + 10ml OV Amêndoas',obs:'Massagear o corpo inteiro. Ótimo para o chakra sacral e equilíbrio hormonal.',
+   o:[['Ylang Ylang',5],['Sândalo',4],['Gerânio',4],['Bergamota',3]]},
+  {n:'Atleta em Ação',c:'massagem',base:'30ml OV Gergelim',obs:'Aplicar antes e após exercícios. Massagear com pressão moderada nos músculos.',
+   o:[['Hortelã-Pimenta',5],['Alecrim',5],['Copaíba',5],['Cipreste',3]]},
+  {n:'Articulações Felizes',c:'massagem',base:'30ml OV Gergelim',obs:'Massagear suavemente sobre as articulações com movimentos circulares. 2-3x ao dia.',
+   o:[['Copaíba',7],['Pimenta Preta',5],['Gengibre',4],['Cipreste',4]]},
+
+  // 🛁 BANHOS
+  {n:'Banho Sensual',c:'banho',base:'5ml OV Amêndoas (dispersante)',obs:'Misturar os OEs no OV ou no sal grosso antes de adicionar ao banho. Água morna, não quente.',
+   o:[['Ylang Ylang',4],['Sândalo',3],['Bergamota',3],['Gerânio',2]]},
+  {n:'Banho para Bebês',c:'banho',base:'5ml OV Amêndoas Doces (diluir obrigatório)',obs:'Diluir no OV e dispersar na água. Apenas para bebês > 6 meses. Lavanda e Camomila Romana somente.',
+   o:[['Lavanda Francesa',2],['Camomila Romana',2]]},
+  {n:'Banho Drenante e Depurador',c:'banho',base:'5ml OV (dispersante)',obs:'Misturar no sal grosso ou OV. Ideal após refeições pesadas ou retenção hídrica.',
+   o:[['Toranja',5],['Cipreste',4],['Gengibre',3],['Hortelã-Pimenta',2]]},
+  {n:'Banho Relaxante e Calmante',c:'banho',base:'5ml OV (dispersante)',obs:'Banho à noite, duração mínima 20 min. Adicionar ao sal ou OV antes de colocar na água.',
+   o:[['Lavanda Francesa',5],['Bergamota',4],['Ylang Ylang',3],['Cedro do Atlas',3]]},
+  {n:'Banho Meditativo',c:'banho',base:'5ml OV (dispersante)',obs:'Banho ao final do dia para meditação e conexão espiritual. Luz de velas para potencializar.',
+   o:[['Olíbano',4],['Sândalo',3],['Mirra',3],['Vetiver',2]]},
+
+  // 🪒 DEPILATÓRIO
+  {n:'Antes da Depilação #1',c:'depilatorio',base:'10ml OV Jojoba',obs:'Aplicar 30 min antes da depilação para suavizar a pele e reduzir irritação.',
+   o:[['Melaleuca',5],['Lavanda Francesa',4],['Hortelã-Pimenta',3]]},
+  {n:'Antes da Depilação #2',c:'depilatorio',base:'10ml OV Amêndoas Doces',obs:'Para peles muito sensíveis. Aplicar 30-60 min antes e deixar absorver.',
+   o:[['Lavanda Francesa',5],['Camomila Alemã',4],['Melaleuca',3]]},
+  {n:'Após a Depilação #1',c:'depilatorio',base:'10ml OV Calêndula',obs:'Aplicar imediatamente após a depilação. Acalma, hidrata e previne pelos encravados.',
+   o:[['Lavanda Francesa',5],['Camomila Alemã',4],['Gerânio',3]]},
+  {n:'Após a Depilação #2 / Pós-Barba',c:'depilatorio',base:'10ml OV Jojoba',obs:'Para mulheres (pós-depilação) e homens (pós-barba). Calmante e anti-inflamatório.',
+   o:[['Lavanda Francesa',5],['Melaleuca',3],['Camomila Romana',3]]},
+  {n:'Pós-Barba Masculino',c:'depilatorio',base:'10ml OV Gergelim',obs:'Aplicar no rosto após barba. Suaviza, desinfla e tem perfume agradável para homens.',
+   o:[['Melaleuca',4],['Copaíba',5],['Cedro do Atlas',3],['Pimenta Preta',2]]},
+
+  // 🌿 DESODORANTE
+  {n:'Desodorante Floral',c:'desodorante',base:'Base creme desodorante (bicarbonato + amido + OV coco)',obs:'Aplicar nas axilas limpas. Receita na aba Receitas Artesanais.',
+   o:[['Melaleuca',10],['Lavanda Francesa',8],['Gerânio',5]]},
+  {n:'Desodorante Cítrico',c:'desodorante',base:'Base creme desodorante (bicarbonato + amido + OV coco)',obs:'Aroma fresco e energizante. Aplicar em pele limpa e seca.',
+   o:[['Melaleuca',8],['Bergamota',7],['Limão',5]]},
+
+  // 🦷 CUIDADO BUCAL
+  {n:'Branqueamento do Esmalte Dental',c:'bucal',base:'1 colher de chá de bicarbonato (ou pasta neutra)',obs:'Adicionar as gotas na pasta. Escovar 2 min. Não engolir. 3x por semana.',
+   o:[['Melaleuca',2],['Hortelã-Pimenta',3],['Limão',2]]},
+  {n:'Enxaguante Antisséptico',c:'bucal',base:'100ml água destilada + 10ml álcool de cereais',obs:'Gargarejar por 30 seg após escovação. Não engolir.',
+   o:[['Melaleuca',3],['Hortelã-Pimenta',5],['Mirra',2]]},
+  {n:'Lábios Saudáveis',c:'bucal',base:'5ml OV Mamona + 3ml OV Amêndoas',obs:'Aplicar nos lábios a qualquer hora. Ótima base para batom natural.',
+   o:[['Hortelã-Pimenta',3],['Lavanda Francesa',3],['Gerânio',2]]},
+  {n:'Escovação Tea Tree e Hortelã',c:'bucal',base:'Pasta dental neutra ou em pó (bicarbonato)',obs:'2 gotas na escova. Combate bactérias bucais, branqueia e refresca.',
+   o:[['Melaleuca',2],['Hortelã-Pimenta',3]]},
+
+  // 🌊 DRENAGEM LINFÁTICA
+  {n:'Drenagem Linfática #1',c:'drenagem',base:'30ml OV Gergelim',obs:'Massagear com movimentos suaves e lentos em direção ao coração, 1x ao dia.',
+   o:[['Toranja',6],['Cipreste',5],['Copaíba',4],['Gengibre',3]]},
+  {n:'Drenagem Linfática #2',c:'drenagem',base:'30ml OV Amêndoas Doces',obs:'Movimentos linfáticos suaves. Beber 2L de água no dia. Ideal pré-menstrual.',
+   o:[['Cipreste',6],['Hortelã-Pimenta',4],['Limão',4],['Toranja',4]]},
+  {n:'Drenagem Linfática #3',c:'drenagem',base:'30ml OV Gergelim',obs:'Para retenção intensa. Combinar com automassagem linfática diária.',
+   o:[['Toranja',8],['Gengibre',5],['Pimenta Preta',3],['Alecrim',4]]},
+
+  // 🩹 CONTUSÕES
+  {n:'Contusão #1 — Suave',c:'contusoes',base:'10ml OV Calêndula',obs:'Aplicar suavemente na área contundida. Não massagear com pressão nas primeiras 24h.',
+   o:[['Lavanda Francesa',5],['Camomila Alemã',4],['Olíbano',3]]},
+  {n:'Contusão #2 — Muscular',c:'contusoes',base:'10ml OV Calêndula',obs:'Para contusões musculares e hematomas. Compressa fria + este óleo.',
+   o:[['Alecrim',4],['Hortelã-Pimenta',4],['Copaíba',5]]},
+  {n:'Contusão #3 — Profunda',c:'contusoes',base:'10ml OV Calêndula',obs:'Para contusões com dor intensa. Aplicar 3-4x ao dia até melhora.',
+   o:[['Copaíba',5],['Pimenta Preta',3],['Lavanda Francesa',4],['Olíbano',3]]},
+  {n:'Contusão #4 — Calmante',c:'contusoes',base:'10ml OV Calêndula',obs:'Para contusões em pele sensível ou em idosos. Toque leve.',
+   o:[['Lavanda Francesa',5],['Camomila Romana',4],['Mirra',3]]},
+
+  // 💠 ALERGIAS DE PELE
+  {n:'Alergia Forte',c:'alergias',base:'10ml OV Calêndula',obs:'Para reações alérgicas intensas. Aplicar na área 3-4x ao dia. Consulte médico se piorar.',
+   o:[['Camomila Alemã',5],['Copaíba',5],['Lavanda Francesa',4],['Olíbano',3]]},
+  {n:'Alergia Moderada',c:'alergias',base:'10ml OV Calêndula',obs:'Para eczema leve e dermatite de contato. Aplicar 2x ao dia.',
+   o:[['Camomila Alemã',4],['Lavanda Francesa',5],['Melaleuca',3]]},
+  {n:'Alergia Suave',c:'alergias',base:'10ml OV Amêndoas Doces',obs:'Para coceira leve e pele sensibilizada. Uso diário preventivo.',
+   o:[['Lavanda Francesa',6],['Gerânio',4]]},
+
+  // 🍊 CELULITE
+  {n:'Celulite #1',c:'celulite',base:'10ml OV Semente de Uva',obs:'Massagear com pressão moderada nas áreas afetadas. 2x ao dia.',
+   o:[['Toranja',6],['Cipreste',5],['Gengibre',4]]},
+  {n:'Celulite #2',c:'celulite',base:'10ml OV Gergelim',obs:'Movimentos circulares e ascendentes. Combinar com exercício para melhores resultados.',
+   o:[['Limão',5],['Cipreste',5],['Pimenta Preta',4],['Hortelã-Pimenta',2]]},
+  {n:'Celulite #3',c:'celulite',base:'10ml OV Gergelim',obs:'Para celulite com edema. Massagem vigorosa diária, preferência pela manhã.',
+   o:[['Toranja',8],['Gengibre',4],['Pimenta Preta',3],['Copaíba',4]]},
+  {n:'Celulite #4',c:'celulite',base:'10ml OV Semente de Uva',obs:'Para pele com celulite e flacidez. Combine com hidratação intensa.',
+   o:[['Bergamota',5],['Cipreste',5],['Toranja',5]]},
+
+  // 🌿 ESTRIAS
+  {n:'Estrias #1 — Preventivo',c:'estrias',base:'10ml OV Rosa Mosqueta + 5ml OV Amêndoas',obs:'Aplicar 2x ao dia em áreas propensas (gravidez, emagrecimento rápido). Massagear.',
+   o:[['Neroli',4],['Lavanda Francesa',5],['Olíbano',3]]},
+  {n:'Estrias #2 — Tratamento',c:'estrias',base:'10ml OV Rosa Mosqueta',obs:'Para estrias estabelecidas. Resultado visível após 4-8 semanas de uso contínuo.',
+   o:[['Olíbano',4],['Mirra',3],['Gerânio',4],['Neroli',3]]},
+
+  // 🌱 CICATRIZAÇÃO
+  {n:'Cicatrização #1 — Básico',c:'cicatrizacao',base:'10ml OV Calêndula',obs:'Aplicar na ferida limpa e fechada. 2-3x ao dia. NÃO em feridas abertas.',
+   o:[['Lavanda Francesa',5],['Olíbano',4],['Copaíba',4]]},
+  {n:'Cicatrização #2 — Antibacteriana',c:'cicatrizacao',base:'10ml OV Calêndula',obs:'Para feridas com risco de infecção. Lavanda + Melaleuca formam dupla poderosa.',
+   o:[['Melaleuca',4],['Lavanda Francesa',5],['Copaíba',5]]},
+  {n:'Cicatrização #3 — Regeneradora',c:'cicatrizacao',base:'10ml OV Rosa Mosqueta',obs:'Para cicatrizes em regressão. Inibe formação de queloides. Uso contínuo 3 meses.',
+   o:[['Olíbano',4],['Mirra',3],['Lavanda Francesa',5],['Neroli',2]]},
+  {n:'Cicatrização #4 — Pós-Cirúrgica',c:'cicatrizacao',base:'10ml OV Calêndula',obs:'Para cicatrizes cirúrgicas. Iniciar após liberação médica (geralmente após 14 dias).',
+   o:[['Gerânio',4],['Melaleuca',3],['Olíbano',4],['Lavanda Francesa',3]]},
+
+  // ☀️ PROTETOR SOLAR NATURAL
+  {n:'Protetor Solar Base #1',c:'protetor',base:'30ml OV Gergelim + 10ml OV Amêndoas Doces',obs:'OV Gergelim tem FPS natural ~4. Para proteção aumentada adicionar OV Framboesa (FPS ~50). NÃO substitui protetor convencional em exposição intensa.',
+   o:[['Lavanda Francesa',5],['Copaíba',3],['Camomila Alemã',2]]},
+  {n:'Protetor Solar Base #2',c:'protetor',base:'30ml OV Rosa Mosqueta + 10ml OV Abacate',obs:'Fórmula nutritiva para pele no sol. Reaplicar a cada 2h. Uso complementar.',
+   o:[['Lavanda Francesa',5],['Camomila Romana',4],['Mirra',3]]},
+
+  // 💇 CASPA
+  {n:'Tratamento de Caspa',c:'caspa',base:'10ml OV Semente de Uva + 5ml OV Gergelim',obs:'Aplicar no couro cabeludo, massagear 5 min. Deixar 60-90 min. Lavar normalmente. 2x/semana.',
+   o:[['Melaleuca',6],['Alecrim',5],['Lavanda Francesa',4],['Cedro do Atlas',3]]},
+
+  // 💅 UNHAS
+  {n:'Unhas Quebradiças #1',c:'unhas',base:'5ml OV Mamona + 5ml OV Jojoba',obs:'Aplicar nas unhas e cutículas todas as noites. Massagear por 2 min.',
+   o:[['Lavanda Francesa',4],['Limão',5],['Olíbano',3]]},
+  {n:'Unhas Amarelas',c:'unhas',base:'5ml OV Amêndoas Doces',obs:'Aplicar 2x ao dia nas unhas. Limão descolore, Tea Tree combate fungos causadores do amarelamento.',
+   o:[['Melaleuca',6],['Limão',5],['Alecrim',3]]},
+  {n:'Unhas Quebradiças #2',c:'unhas',base:'5ml OV Mamona',obs:'OV Mamona estimula crescimento das unhas. Aplicar diariamente antes de dormir.',
+   o:[['Cipreste',4],['Lavanda Francesa',4],['Gerânio',3]]},
+  {n:'Sérum Saúde das Unhas',c:'unhas',base:'10ml OV Rosa Mosqueta + 5ml OV Mamona',obs:'Para unhas frágeis, quebradiças e com crescimento lento. Uso noturno contínuo.',
+   o:[['Olíbano',4],['Lavanda Francesa',4],['Mirra',3],['Neroli',2]]},
+
+  // 💧 OLEOSIDADE
+  {n:'Pele Oleosa sem Vida',c:'oleosidade',base:'10ml OV Jojoba',obs:'Jojoba regula sebo. Aplicar no rosto limpo à noite. Contraintuitivo mas funciona muito bem.',
+   o:[['Bergamota',4],['Melaleuca',3],['Gerânio',4]]},
+  {n:'Pele Oleosa com Acne',c:'oleosidade',base:'10ml OV Jojoba (ou gel de Aloe Vera)',obs:'Para acne ativa. Aplicar pontualmente nas lesões 3x ao dia. OE de Alecrim potencializa.',
+   o:[['Melaleuca',5],['Lavanda Francesa',4],['Bergamota',3]]},
+  {n:'Oleosidade e Questões Emocionais',c:'oleosidade',base:'10ml OV Jojoba',obs:'Quando a pele oleosa tem origem emocional/estresse. Aplicar no rosto e usar em difusor simultaneamente.',
+   o:[['Bergamota',4],['Gerânio',4],['Lavanda Francesa',3],['Olíbano',2]]},
+
+  // 🌵 PELE SECA
+  {n:'Hidratação Pele Seca #1',c:'pele-seca',base:'10ml OV Amêndoas + 5ml OV Abacate',obs:'Aplicar em pele úmida após o banho para selar a hidratação. Ideal para todo o corpo.',
+   o:[['Neroli',4],['Sândalo',3],['Gerânio',3]]},
+  {n:'Tratamento Noturno Pele Seca',c:'pele-seca',base:'10ml OV Rosa Mosqueta',obs:'Soro noturno concentrado. Pele seca e madura. Resultado em 2-4 semanas.',
+   o:[['Olíbano',4],['Mirra',3],['Gerânio',3],['Neroli',3]]}
+];
+
+function setSinMode(mode, btn) {
+  sinMode = mode;
+  document.querySelectorAll('.sin-mode-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  if (mode === 'difusor') {
+    document.getElementById('sin-title').textContent = 'Sinergias para Difusor';
+    document.getElementById('sin-sub').innerHTML = '150 receitas prontas · livro <em>Sinergias no Difusor</em>';
+    document.getElementById('sin-only-stock').parentElement.parentElement.style.display = '';
+    renderSinChips();
+    renderSin();
+  } else {
+    document.getElementById('sin-title').textContent = 'Sinergias para Cuidados Gerais';
+    document.getElementById('sin-sub').innerHTML = '55 receitas tópicas · Sinergias 1 · Pele de Pétalas · André Ferraz';
+    document.getElementById('sin-only-stock').parentElement.parentElement.style.display = '';
+    renderCuidadosChips();
+    renderSinCuidados();
+  }
+}
+
+function renderCuidadosChips() {
+  const wrap = document.getElementById('sin-chips');
+  const total = SINERGIAS_CUIDADOS.length;
+  let items = [`<button class="chip sin-chip active" data-cat="" onclick="cuidadosChip(this,'')">Todas <small style="opacity:.6">(${total})</small></button>`];
+  CUIDADOS_CATS.forEach(c => {
+    const n = SINERGIAS_CUIDADOS.filter(r=>r.c===c.id).length;
+    if (n) items.push(`<button class="chip sin-chip" data-cat="${c.id}" onclick="cuidadosChip(this,'${c.id}')">${c.emoji} ${c.nome} <small style="opacity:.6">(${n})</small></button>`);
+  });
+  wrap.innerHTML = items.join('');
+}
+
+function cuidadosChip(btn, cat) {
+  document.querySelectorAll('.sin-chip').forEach(c=>{c.classList.remove('active');c.style.background='';c.style.color='';});
+  btn.classList.add('active');
+  cuidadosActiveCat = cat;
+  renderSinCuidados();
+}
+
+function renderSinCuidados() {
+  const q = (document.getElementById('sin-search').value || '').toLowerCase().trim();
+  const onlyStock = document.getElementById('sin-only-stock').checked;
+  const inStock = new Set(stock.map(s=>s.nome));
+  const grid = document.getElementById('sin-grid');
+  const counter = document.getElementById('sin-count');
+
+  let filtered = SINERGIAS_CUIDADOS;
+  if (cuidadosActiveCat) filtered = filtered.filter(r=>r.c===cuidadosActiveCat);
+  if (q) filtered = filtered.filter(r=>(r.n+' '+r.o.map(x=>x[0]).join(' ')+' '+r.base+' '+r.obs).toLowerCase().includes(q));
+  if (onlyStock) {
+    filtered = filtered.filter(r=>r.o.every(([nm])=>inStock.has(nm)));
+  }
+  counter.textContent = `${filtered.length} de ${SINERGIAS_CUIDADOS.length} receitas`;
+  if (!filtered.length) {
+    grid.innerHTML = '<div class="sin-empty"><span>🧴</span>Nenhuma sinergia encontrada com esses filtros.</div>';
+    return;
+  }
+  grid.innerHTML = filtered.map(r => {
+    const cat = CUIDADOS_CATS.find(c=>c.id===r.c)||{emoji:'🌿',nome:r.c,cor:'var(--sage)'};
+    const oils = r.o.map(([nm,gt])=>{
+      const flag = inStock.has(nm)
+        ? '<span class="sin-oil-flag tem">✅</span>'
+        : '<span class="sin-oil-flag falta">🛒</span>';
+      return `<div class="cuid-oil"><span class="cuid-gt">${gt}gt</span><span class="sin-oil-name">${nm}</span>${stock.length?flag:''}</div>`;
+    }).join('');
+    const allHave = stock.length && r.o.every(([nm])=>inStock.has(nm));
+    const haveAll = allHave ? '<span class="sin-have-all">✓ tenho todos</span>' : '';
+    const recText = r.n+'\nBase: '+r.base+'\n'+r.o.map(([n,d])=>`${d} gotas de ${n}`).join('\n')+'\n'+r.obs;
+    const safe = recText.replace(/`/g,'\\`').replace(/\$/g,'\\$');
+    return `<div class="cuid-card" style="border-top-color:${cat.cor}">
+  <div class="sin-cat-bar"><span class="cuid-cat-tag" style="background:${cat.cor}1f;color:${cat.cor}">${cat.emoji} ${cat.nome}</span>${haveAll}</div>
+  <div class="cuid-name">${r.n}</div>
+  <div class="cuid-base">📦 ${r.base}</div>
+  <div class="cuid-oils">${oils}</div>
+  <div class="cuid-obs">📌 ${r.obs}</div>
+  <div class="sin-actions" style="border-top:1px dashed var(--border);padding-top:10px;margin-top:6px">
+    <button class="sin-btn" onclick="sinCopiar(this,\`${safe}\`)">📋 Copiar receita</button>
+  </div>
+</div>`;
+  }).join('');
 }
 
 // ══════════════════════════════════════════════
@@ -2801,6 +3780,225 @@ renderTrt();
 renderCar();
 renderRecChips();
 renderRec();
+// ══════════════════════════════════════════════
+// PSICOAROMATERAPIA — Dados (Módulo 7 Pele de Pétalas)
+// ══════════════════════════════════════════════
+
+const ESTADOS_EMOCIONAIS = [
+  {id:'ansiedade', nome:'Ansiedade', emoji:'😰', cor:'#7a9e87',
+   sinais:'Tensão muscular, pensamentos acelerados, palpitações, dificuldade de respirar, preocupação excessiva',
+   desc:'O olfato acessa diretamente o sistema límbico, modulando GABA — neurotransmissor do relaxamento. Aromas de lavanda e bergamota produzem efeito ansiolítico comprovado.',
+   oleos:[{n:'Lavanda Francesa',a:'Reduz cortisol, regula SNC'},{n:'Bergamota',a:'Ansiolítica, eleva humor'},{n:'Camomila Romana',a:'Calmante profunda'},{n:'Neroli',a:'Crise de pânico aguda'},{n:'Vetiver',a:'Enraizamento, ansiedade flutuante'}],
+   protocolo:'Difusor: 3 gt lavanda + 2 gt bergamota + 1 gt vetiver. Inalação direta: 1 gt neroli no pulso por 3 min. Massagem: 2% em jojoba na nuca e ombros.',
+   afirmacao:'Estou segura. Meu sistema nervoso encontra paz a cada respiração.'},
+
+  {id:'depressao', nome:'Depressão / Baixo Astral', emoji:'🌧️', cor:'#8b7355',
+   sinais:'Falta de energia, desmotivação, pensamentos negativos, isolamento, choro fácil, anedonia',
+   desc:'Citros e especiarias estimulam serotonina e dopamina. A bergamota é clinicamente estudada por sua ação antidepressiva através da via olfativa.',
+   oleos:[{n:'Bergamota',a:'Antidepressivo natural, serotonina'},{n:'Ylang Ylang',a:'Euforizante, autoestima'},{n:'Laranja Doce',a:'Alegria, leveza, esperança'},{n:'Incenso (Olíbano)',a:'Profundidade espiritual'},{n:'Gerânio',a:'Equilíbrio emocional, hormônios'}],
+   protocolo:'Difusor manhã: 3 gt laranja + 2 gt bergamota + 1 gt ylang. Banho: 8 gt bergamota + 4 gt gerânio em sal grosso. Massagem: 3% em amêndoas no peito e plexo solar.',
+   afirmacao:'Mereço alegria. A vida flui através de mim com leveza e amor.'},
+
+  {id:'estresse', nome:'Estresse Crônico', emoji:'⚡', cor:'#a85d4a',
+   sinais:'Irritabilidade, tensão no pescoço/ombros, insônia, exaustão mental, bruxismo, sobrecarga',
+   desc:'O estresse crônico eleva o cortisol sistematicamente. Óleos adaptogênicos como vetiver e patchouli regulam o eixo HPA (hipotálamo-hipófise-adrenal).',
+   oleos:[{n:'Vetiver',a:'Adaptogênico, reduz cortisol'},{n:'Lavanda Francesa',a:'Moduladora do SNC'},{n:'Patchouli Light',a:'Aterramento, excesso'},{n:'Alecrim QT Cânfora',a:'Libera tensão muscular'},{n:'Incenso',a:'Desacelera a respiração'}],
+   protocolo:'Noite: 3 gt lavanda + 2 gt vetiver + 1 gt patchouli em difusor. Acupressão: 1 gt lavanda no ponto P6 (3 dedos acima do pulso). Banho: sal + 6 gt lavanda + 4 gt vetiver.',
+   afirmacao:'Solto o que não é meu. Me permito descansar e renovar minhas forças.'},
+
+  {id:'insonia', nome:'Insônia / Sono Agitado', emoji:'🌙', cor:'#5c6bc0',
+   sinais:'Dificuldade para adormecer, acordar à noite, sono não reparador, pensamentos na hora de dormir',
+   desc:'Lavanda e camomila atuam nos receptores GABA-A, promovendo relaxamento neurológico. A inalação 30 min antes de dormir reduz o tempo de início do sono em estudos clínicos.',
+   oleos:[{n:'Lavanda Francesa',a:'GABA-A agonista, sono profundo'},{n:'Vetiver',a:'Desliga o mental'},{n:'Camomila Romana',a:'Calmante profunda, pesadelos'},{n:'Cedro Atlas',a:'Proteção e segurança'},{n:'Bergamota',a:'Ansiedade noturna'}],
+   protocolo:'Ritual: difusor 30 min antes de dormir: 4 gt lavanda + 2 gt vetiver + 1 gt camomila. Travesseiro: 1 gt lavanda + 1 gt cedro num lenço. Sola dos pés: 2 gt lavanda pura.',
+   afirmacao:'Me entrego ao descanso. Meu corpo sabe como se recuperar.'},
+
+  {id:'medo', nome:'Medo / Fobia / Pânico', emoji:'😨', cor:'#7986cb',
+   sinais:'Coração acelerado, respiração curta, sensação de perigo, mãos suadas, paralisia, fuga',
+   desc:'Neroli e bergamota modulam a amígdala — o centro do medo. A inalação direta durante uma crise acessa o sistema límbico mais rápido que qualquer medicamento oral.',
+   oleos:[{n:'Neroli',a:'Pânico agudo, acalma a amígdala'},{n:'Bergamota',a:'Dissipa o medo'},{n:'Ylang Ylang',a:'Ritmo cardíaco, alívio imediato'},{n:'Lavanda Francesa',a:'Base segura'},{n:'Incenso',a:'Âncora, presença'}],
+   protocolo:'Crise aguda: 1 gt neroli + 1 gt lavanda nas palmas, esfregar, cobrir nariz, 10 respirações. Preventivo: 2% neroli + bergamota em jojoba, aplicar no peito diariamente.',
+   afirmacao:'Estou segura agora. Este momento passa. Sou maior que este medo.'},
+
+  {id:'raiva', nome:'Raiva / Irritabilidade', emoji:'🔥', cor:'#ef5350',
+   sinais:'Explosões, tensão na mandíbula, pensamentos de injustiça, temperatura elevada, reatividade',
+   desc:'Óleos cítricos e florais ajudam a transformar a raiva em assertividade saudável. Camomila romana é especialmente eficaz para "resfriar" a raiva aguda.',
+   oleos:[{n:'Bergamota',a:'Transforma raiva em clareza'},{n:'Camomila Romana',a:'Resfria a raiva, paciência'},{n:'Ylang Ylang',a:'Libera tensão acumulada'},{n:'Gerânio',a:'Equilíbrio, comunicação'},{n:'Laranja Doce',a:'Leveza, perspectiva'}],
+   protocolo:'Inalação imediata: 2 gt bergamota + 1 gt camomila nas mãos. Massagem mandíbula: 1% camomila em amêndoas. Banho: sal + 6 gt laranja + 4 gt bergamota + 2 gt ylang.',
+   afirmacao:'Expresso minha raiva de forma saudável. Minhas emoções são informações valiosas.'},
+
+  {id:'tristeza', nome:'Tristeza / Luto', emoji:'💙', cor:'#42a5f5',
+   sinais:'Choro, saudade, vazio, dificuldade de seguir em frente, pesadume no peito, isolamento',
+   desc:'O luto tem seu próprio ritmo. Incenso e rosa acompanham o processo criando um espaço seguro para sentir e integrar a perda.',
+   oleos:[{n:'Incenso (Olíbano)',a:'Suporte espiritual, integração'},{n:'Rosa',a:'Cura do coração, amor próprio'},{n:'Gerânio',a:'Luto equilibrado, hormônios'},{n:'Mirra',a:'Ancoragem, aceitação'},{n:'Lavanda Francesa',a:'Conforto, presença suave'}],
+   protocolo:'Difusor: 3 gt incenso + 2 gt gerânio + 1 gt rosa. Massagem no peito: 1% rosa em rosa mosqueta. Banho ritual: sal rosa + 5 gt gerânio + 3 gt lavanda.',
+   afirmacao:'Me permito sentir e curar. O amor que senti sempre estará em mim.'},
+
+  {id:'trauma', nome:'Trauma / TEPT', emoji:'🌊', cor:'#26a69a',
+   sinais:'Flashbacks, hipervigilância, evitação, entorpecimento, pesadelos, resposta de susto exagerada',
+   desc:'O trauma fica armazenado no corpo. Óleos enraizadores como vetiver e patchouli criam segurança no momento presente — ancoragem somática essencial na recuperação.',
+   oleos:[{n:'Vetiver',a:'Enraizamento, segurança no corpo'},{n:'Patchouli Light',a:'Presença, conexão somática'},{n:'Cedro Atlas',a:'Proteção profunda'},{n:'Incenso',a:'Integração espiritual'},{n:'Lavanda Francesa',a:'Regulação nervosa'}],
+   protocolo:'Aplicar 2% vetiver + cedro em amêndoas nos pés e tornozelos. Difusor noite: patchouli + incenso + lavanda. Inalação lenta antes de sessão terapêutica.',
+   afirmacao:'Estou segura no momento presente. Meu corpo é um lugar seguro para habitar.'},
+
+  {id:'autoestima', nome:'Baixa Autoestima / Insegurança', emoji:'💜', cor:'#ab47bc',
+   sinais:'Comparação constante, autossabotagem, dificuldade em receber elogios, voz interior crítica, timidez paralisante',
+   desc:'Ylang ylang e bergamota promovem autoaceitação e confiança. O ritual olfativo repetido recondiciona a associação entre seu aroma pessoal e seu autovalor.',
+   oleos:[{n:'Ylang Ylang',a:'Autoestima, autoaceitação'},{n:'Bergamota',a:'Confiança, perspectiva positiva'},{n:'Gerânio',a:'Amor próprio, equilíbrio'},{n:'Rosa',a:'Amor incondicional pelo self'},{n:'Incenso',a:'Propósito, valor espiritual'}],
+   protocolo:'Sérum pessoal: 2% em jojoba — ylang (3 gt) + bergamota (3 gt) + gerânio (2 gt) por 10 ml. Aplicar no pulso com afirmação diária. Difusor trabalho: bergamota + laranja.',
+   afirmacao:'Sou suficiente. Minha presença no mundo é valiosa e única.'},
+
+  {id:'burnout', nome:'Burnout / Esgotamento', emoji:'🕯️', cor:'#ff7043',
+   sinais:'Exaustão profunda, desconexão emocional, cinismo, sensação de vazio, querer largar tudo',
+   desc:'Burnout esgota o sistema nervoso adrenal. A recuperação exige óleos que nutrem o SNA e restauram a conexão com o prazer e o propósito.',
+   oleos:[{n:'Vetiver',a:'Restaura as raízes, adaptogênico'},{n:'Lavanda Francesa',a:'Regeneração do SNP'},{n:'Bergamota',a:'Reconexão com alegria'},{n:'Patchouli Light',a:'Reaprendendo a habitar o corpo'},{n:'Laranja Doce',a:'Alegria simples, leveza'}],
+   protocolo:'Manhã: 3 gt bergamota + 2 gt laranja (reconexão). Noite: 3 gt vetiver + 2 gt lavanda (restauração). Banho semanal: sal + óleos + intenção de descanso.',
+   afirmacao:'Me permito descansar sem culpa. Cuidar de mim é a base de tudo.'},
+
+  {id:'concentracao', nome:'Dificuldade de Concentração', emoji:'🎯', cor:'#26c6da',
+   sinais:'Mente dispersa, procrastinação, esquecimento, multitarefa ineficaz, dificuldade de iniciar',
+   desc:'O alecrim aumenta o 1,8-cineol no plasma, melhorando memória e velocidade de processamento. A hortelã estimula o simpático e melhora a vigilância.',
+   oleos:[{n:'Alecrim QT Cineol',a:'Memória, processamento'},{n:'Hortelã-Pimenta',a:'Alerta mental, energia'},{n:'Limão',a:'Clareza, organização mental'},{n:'Eucalipto Globulus',a:'Abertura, presença'},{n:'Cipreste',a:'Estrutura, disciplina'}],
+   protocolo:'Difusor estudo: 3 gt alecrim + 2 gt limão + 1 gt hortelã. Inalação rápida (5 min antes de tarefa): 1 gt alecrim + 1 gt hortelã nas mãos. Evite à noite — estimulante.',
+   afirmacao:'Minha mente é clara e focada. Tenho tudo que preciso.'},
+
+  {id:'culpa', nome:'Culpa / Autopunição', emoji:'⚖️', cor:'#8d6e63',
+   sinais:'Ruminação sobre erros passados, autoflagelação, dificuldade de se perdoar',
+   desc:'A culpa crônica eleva o cortisol e cria padrões de autossabotagem. Incenso e mirra têm uso milenar em rituais de purificação e perdão.',
+   oleos:[{n:'Incenso (Olíbano)',a:'Purificação, liberação do passado'},{n:'Bergamota',a:'Autoperdão, perspectiva compassiva'},{n:'Mirra',a:'Aceitação, integração'},{n:'Rosa',a:'Amor próprio incondicional'},{n:'Lavanda Francesa',a:'Gentileza com si mesma'}],
+   protocolo:'Ritual: difusor incenso + mirra + bergamota. Massagem peito: 1% rosa em rosa mosqueta, movimentos circulares com intenção de autoperdão.',
+   afirmacao:'Me perdoo por tudo que fiz com o conhecimento que tinha. Sou digna de amor.'},
+
+  {id:'solidao', nome:'Solidão / Desconexão', emoji:'🌿', cor:'#66bb6a',
+   sinais:'Isolamento mesmo em grupo, saudade de conexão, invisibilidade, dificuldade de pedir ajuda',
+   desc:'Óleos florais ativam a sensação de pertencimento. O olfato é o sentido mais ligado à memória afetiva — bons aromas reativam memórias de amor e conexão.',
+   oleos:[{n:'Gerânio',a:'Amor, pertencimento, coração'},{n:'Ylang Ylang',a:'Conexão, autoaceitação'},{n:'Rosa',a:'Amor incondicional'},{n:'Neroli',a:'Confiança, abertura'},{n:'Laranja Doce',a:'Calor humano, generosidade'}],
+   protocolo:'Perfume pessoal: 2% jojoba — gerânio + neroli + ylang. Difusor em casa: laranja + gerânio. Massagem coração: movimentos suaves.',
+   afirmacao:'Sou amada e conectada. Meu coração está aberto para dar e receber amor.'}
+];
+
+// ── Condições de Pele e Emoções ──
+const PELE_EMOCOES = [
+  {id:'acne', cond:'Acne', emoji:'🌋', cor:'#ef5350',
+   raiz:'Autoestima · Vergonha · Raiva não expressada · "Não quero ser vista"',
+   desc:'A acne floresce nos períodos de crise de identidade. Em adultos, está associada a raiva suprimida, baixa autoestima e o desejo de "desaparecer". A glândula sebácea responde ao cortisol e andrógenos — ambos elevados no estresse.',
+   emoc:'Raiva, vergonha, não se sentir merecedora de ser vista',
+   abord:'Trabalhe autoestima com ylang ylang + bergamota (difusor). Tópico: tea tree + lavanda 2% em gel aloe vera. Evite tocar o rosto em momentos de tensão.',
+   oleos:[{n:'Tea Tree',a:'Antibacteriano, secativo'},{n:'Lavanda Francesa',a:'Anti-inflamatória, cicatrizante'},{n:'Bergamota',a:'Antibacteriana, eleva autoestima'},{n:'Ylang Ylang',a:'Raiva, autoestima'},{n:'Gerânio',a:'Regulação sebácea'}]},
+  {id:'eczema', cond:'Eczema / Dermatite', emoji:'🌿', cor:'#66bb6a',
+   raiz:'Fronteiras · Hipersensibilidade · "Não me sinto protegida no mundo"',
+   desc:'O eczema representa literalmente a pele que "reage demais". Associado a pessoas com hipersensibilidade emocional, dificuldade de estabelecer limites e sentimento de vulnerabilidade ao ambiente externo.',
+   emoc:'Hipersensibilidade, falta de proteção, dificuldade de limites',
+   abord:'Difusor com óleos enraizadores (vetiver + cedro) para criar sensação de proteção. Tópico: camomila alemã + lavanda 1% em óleo de jojoba.',
+   oleos:[{n:'Camomila Alemã',a:'Anti-inflamatória, antialérgica'},{n:'Lavanda Francesa',a:'Calmante, cicatrizante'},{n:'Cedro do Atlas',a:'Proteção, estrutura'},{n:'Vetiver',a:'Enraizamento, limites'},{n:'Rosa Mosqueta',a:'Regeneração celular'}]},
+  {id:'psoriase', cond:'Psoríase', emoji:'⚡', cor:'#ffa726',
+   raiz:'Aceitação · Crítica interna · "Nada do que faço é suficiente"',
+   desc:'A psoríase tem forte correlação com episódios de estresse e autocrítica severa. A pele renova-se de forma acelerada como resposta ao sistema imune desregulado pelo cortisol crônico.',
+   emoc:'Autocrítica, perfeccionismo, não se sentir suficiente',
+   abord:'Bergamota + lavanda no difusor (efeito ansiolítico). Tópico: copaíba + camomila alemã em gel ou creme sem perfume.',
+   oleos:[{n:'Copaíba',a:'Anti-inflamatório potente, psoríase'},{n:'Camomila Alemã',a:'Inibe leucotrienos pró-inflamatórios'},{n:'Bergamota',a:'Autoperdão, libera tensão'},{n:'Lavanda Francesa',a:'Regulação imune, calmante'},{n:'Mirra',a:'Renovação e aceitação'}]},
+  {id:'rosácea', cond:'Rosácea', emoji:'🌹', cor:'#e91e63',
+   raiz:'Vergonha · "Não mereço ser vista" · Emoções que sobem ao rosto',
+   desc:'O rubor da rosácea frequentemente se intensifica com emoções — vergonha, raiva reprimida, ansiedade social. A face literalmente "denuncia" o estado emocional.',
+   emoc:'Vergonha, exposição, sensação de ser julgada',
+   abord:'Trabalhe a exposição emocional com gerânio e rosa. Tópico: camomila romana + gerânio 1% em óleo de rosa mosqueta. Evitar óleos picantes.',
+   oleos:[{n:'Camomila Romana',a:'Anti-inflamatória, vasodilatação'},{n:'Gerânio',a:'Equilíbrio emocional, renovação'},{n:'Rosa',a:'Amor próprio, aceitação'},{n:'Lavanda Francesa',a:'Calmante vascular'},{n:'Sândalo',a:'Suaviza e acalma a pele'}]},
+  {id:'herpes', cond:'Herpes', emoji:'🔥', cor:'#ff7043',
+   raiz:'Vulnerabilidade · Rancor guardado · Limites não expressos',
+   desc:'O vírus do herpes fica latente e se manifesta em momentos de baixa imunidade emocional — estresse, raiva engolida, exaustão. Representa literalmente algo que "arde por dentro e não é dito".',
+   emoc:'Rancor, frustração não expressada, exaustão emocional',
+   abord:'Fortaleça a imunidade emocional com incenso e melissa. Tópico: tea tree puro pontual + lavanda 2% na área afetada.',
+   oleos:[{n:'Tea Tree',a:'Antiviral, pontual'},{n:'Melissa',a:'Antiviral específica para herpes'},{n:'Incenso (Olíbano)',a:'Imunidade, libera rancor'},{n:'Lavanda Francesa',a:'Cicatrizante, calmante'},{n:'Bergamota',a:'Antiviral, clareza emocional'}]},
+  {id:'melasma', cond:'Melasma / Manchas', emoji:'☀️', cor:'#8d6e63',
+   raiz:'Sombra · Memórias não integradas · Marcas do passado',
+   desc:'O melasma (especialmente hormonal) representa marcas que a pele guarda — às vezes relacionadas a gestações, lutos, ou períodos de intensa emoção. "O passado visível na pele".',
+   emoc:'Não integração do passado, fases de transformação não resolvidas',
+   abord:'Trabalhe aceitação e integração com patchouli + incenso. Tópico: espruce canadense + gerânio + rosa mosqueta 2% (noite).',
+   oleos:[{n:'Espruce Canadense',a:'Manchas escuras, rejuvenescimento'},{n:'Gerânio',a:'Equilíbrio hormonal e emocional'},{n:'Incenso (Olíbano)',a:'Integração, liberação do passado'},{n:'Patchouli Light',a:'Aceitação, presença'},{n:'Limão Siciliano',a:'Clareamento, leveza (noite)'}]},
+  {id:'alopecia', cond:'Alopécia / Queda', emoji:'💆', cor:'#7e57c2',
+   raiz:'Medo · Perda de controle · "Estou perdendo a minha identidade"',
+   desc:'O cabelo é símbolo de vitalidade e identidade. A queda intensa — especialmente a areata — está fortemente ligada a episódios de estresse agudo ou trauma. O folículo responde ao cortisol.',
+   emoc:'Medo de perda, de mudança, de não ter controle',
+   abord:'Alecrim no couro cabeludo (comprovado em estudos) + cedro do atlas. Difusor: lavanda + alecrim para reduzir cortisol.',
+   oleos:[{n:'Alecrim QT Cânfora',a:'Estimula folículos, circulação local'},{n:'Cedro do Atlas',a:'Ativa papila dérmica (estudo 2019)'},{n:'Lavanda Francesa',a:'Reduz cortisol, promove crescimento'},{n:'Sálvia Esclaréia',a:'Equilíbrio hormonal (DHT)'},{n:'Ylang Ylang',a:'Circulação do couro cabeludo'}]},
+  {id:'envelhecimento', cond:'Envelhecimento Precoce', emoji:'⏳', cor:'#26a69a',
+   raiz:'Sobrecarga · Pressão excessiva · Deixar o prazer de lado',
+   desc:'A pele envelhece mais rápido quando o corpo está em modo de sobrevivência crônico. O cortisol degrada o colágeno. Pessoas que "vivem correndo" e não reservam tempo para si envelhecem a pele antes do tempo.',
+   emoc:'Exaustão, falta de prazer, viver para os outros',
+   abord:'Práticas de prazer com rosas, néroli e jasmim. Tópico: néroli + rosa + incenso 2% em argan (sérum antienvelhecimento).',
+   oleos:[{n:'Néroli',a:'Citofilático supremo, colágeno'},{n:'Rosa de Damasco',a:'Antienvelhecimento, amor próprio'},{n:'Incenso (Olíbano)',a:'Regeneração celular, profundo'},{n:'Mirra',a:'Combate radicais livres, pele madura'},{n:'Patchouli Light',a:'Regeneração, presença no prazer'}]},
+  {id:'micoses', cond:'Micoses Recorrentes', emoji:'🍄', cor:'#78909c',
+   raiz:'Fronteiras dissoltas · Invasão · "Deixo que me consumam"',
+   desc:'Micoses recorrentes — especialmente candidíase e tinha — indicam um sistema imunológico sobrecarregado. Associadas a ambientes internos de alta acidez emocional: esgotamento, falta de limites.',
+   emoc:'Esgotamento, incapacidade de se proteger, falta de limites',
+   abord:'Tea tree + lavanda topicamente. Internamente: fortalecimento imune com incenso. Revisar nível de açúcar na dieta e estresse crônico.',
+   oleos:[{n:'Tea Tree',a:'Antifúngico mais estudado'},{n:'Lavanda Francesa',a:'Antifúngica, cicatrizante'},{n:'Cedro do Atlas',a:'Antifúngico, proteção'},{n:'Incenso (Olíbano)',a:'Imunidade, fortalecimento'},{n:'Orégano',a:'Antifúngico potente (⚠️ diluir)'}]},
+  {id:'celulite', cond:'Celulite / Retenção', emoji:'💧', cor:'#42a5f5',
+   raiz:'Acumulação · "Guardar o que não preciso" · Estagnação',
+   desc:'A celulite está associada à circulação linfática comprometida — frequentemente espelhando acumulação emocional: guardar mágoas, não processar vivências. Estagnação no corpo reflete estagnação emocional.',
+   emoc:'Acumulação, dificuldade de soltar, estagnação',
+   abord:'Drenagem linfática com cipreste + gengibre. Massagem com movimentos de baixo para cima. Difusor com cítricos para estimular o movimento.',
+   oleos:[{n:'Cipreste',a:'Drenagem linfática, circulação'},{n:'Gengibre',a:'Aquecimento, ativa circulação'},{n:'Capim-Limão',a:'Diurético, tonificante'},{n:'Laranja Doce',a:'Lipolítico, alegria, fluxo'},{n:'Patchouli Light',a:'Soltar o que não serve'}]}
+];
+
+// ── Funções de renderização — Psicoaromaterapia ──
+
+function setPsicoTab(tab, btn) {
+  document.querySelectorAll('.psico-section').forEach(s => s.style.display = 'none');
+  document.querySelectorAll('.psico-tab').forEach(b => b.classList.remove('active'));
+  document.getElementById('psico-' + tab).style.display = 'block';
+  btn.classList.add('active');
+}
+
+function renderPsico() {
+  renderPsicoEstados();
+  renderPelePsico();
+}
+
+function renderPsicoEstados() {
+  const grid = document.getElementById('psico-estados-grid');
+  if (!grid || grid.dataset.rendered) return;
+  grid.dataset.rendered = '1';
+  grid.innerHTML = ESTADOS_EMOCIONAIS.map(e => {
+    const oleosHtml = e.oleos.map(o => {
+      const tem = stock.includes(o.n);
+      return `<div class="emoc-oleo ${tem?'tem':''}"><span class="emoc-oleo-nome">${tem?'✅ ':''}<strong>${o.n}</strong></span><span class="emoc-oleo-acao">${o.a}</span></div>`;
+    }).join('');
+    return `<div class="emoc-card" style="border-top:4px solid ${e.cor}">
+      <div class="emoc-header">
+        <span class="emoc-emoji">${e.emoji}</span>
+        <div><div class="emoc-nome">${e.nome}</div><div class="emoc-sinais">${e.sinais}</div></div>
+      </div>
+      <p class="emoc-desc">${e.desc}</p>
+      <div class="emoc-oleos-grid">${oleosHtml}</div>
+      <div class="emoc-proto"><strong>Protocolo:</strong> ${e.protocolo}</div>
+      <div class="emoc-afirmacao">"${e.afirmacao}"</div>
+    </div>`;
+  }).join('');
+}
+
+function renderPelePsico() {
+  const grid = document.getElementById('psico-pele-grid');
+  if (!grid || grid.dataset.rendered) return;
+  grid.dataset.rendered = '1';
+  grid.innerHTML = PELE_EMOCOES.map(p => {
+    const oleosHtml = p.oleos.map(o => {
+      const tem = stock.includes(o.n);
+      return `<div class="emoc-oleo ${tem?'tem':''}"><span class="emoc-oleo-nome">${tem?'✅ ':''}<strong>${o.n}</strong></span><span class="emoc-oleo-acao">${o.a}</span></div>`;
+    }).join('');
+    return `<div class="emoc-card" style="border-top:4px solid ${p.cor}">
+      <div class="emoc-header">
+        <span class="emoc-emoji">${p.emoji}</span>
+        <div><div class="emoc-nome">${p.cond}</div><div class="emoc-sinais" style="color:#e57373">${p.raiz}</div></div>
+      </div>
+      <p class="emoc-desc">${p.desc}</p>
+      <div class="emoc-proto" style="color:var(--muted)"><strong>Emocional:</strong> ${p.emoc}</div>
+      <div class="emoc-proto" style="margin-top:6px"><strong>Abordagem:</strong> ${p.abord}</div>
+      <div class="emoc-oleos-grid">${oleosHtml}</div>
+    </div>`;
+  }).join('');
+}
+
 </script>
 </body>
 </html>
