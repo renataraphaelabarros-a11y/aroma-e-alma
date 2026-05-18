@@ -3767,6 +3767,44 @@ function renderRec() {
   }).join('');
 }
 
+// ── PRÉ-CARGA DO ESTOQUE (primeira vez) ──
+(function() {
+  const atual = JSON.parse(localStorage.getItem('aroma_stock_v2') || '[]');
+  if (!atual.length) {
+    const inicial = [
+      {nome:"Alecrim QT Cânfora",  qtd:"bastante"},
+      {nome:"Ylang Ylang",         qtd:"bastante"},
+      {nome:"Bergamota",           qtd:"bastante"},
+      {nome:"Cedro da Virgínia",   qtd:"bastante"},
+      {nome:"Orégano",             qtd:"bastante"},
+      {nome:"Manjerona",           qtd:"bastante"},
+      {nome:"Sempreviva",          qtd:"medio"},
+      {nome:"Gerânio",             qtd:"bastante"},
+      {nome:"Patchouli Light",     qtd:"bastante"},
+      {nome:"Camomila Romana",     qtd:"medio"},
+      {nome:"Canela do Ceilão",    qtd:"bastante"},
+      {nome:"Tomilho",             qtd:"bastante"},
+      {nome:"Sândalo",             qtd:"medio"},
+      {nome:"Hortelã Pimenta",     qtd:"bastante"},
+      {nome:"Eucalipto Globulus",  qtd:"bastante"},
+      {nome:"Copaíba",             qtd:"bastante"},
+      {nome:"Gengibre",            qtd:"bastante"},
+      {nome:"Tuia Maçã",           qtd:"medio"},
+      {nome:"Manjericão",          qtd:"medio"},
+      {nome:"Lavanda Francesa",    qtd:"bastante"},
+      {nome:"Tea Tree",            qtd:"bastante"},
+      {nome:"Cravo da Índia",      qtd:"bastante"},
+      {nome:"Abeto",               qtd:"bastante"},
+      {nome:"Junípero",            qtd:"medio"},
+      {nome:"Limão Siciliano",     qtd:"bastante"},
+      {nome:"Sálvia Esclaréia",    qtd:"bastante"},
+      {nome:"Wintergreen",         qtd:"bastante"}
+    ];
+    localStorage.setItem('aroma_stock_v2', JSON.stringify(inicial));
+    stock = inicial;
+  }
+})();
+
 // ── INIT (v2 — Sinergias) ──
 populateSelect();
 renderStock();
